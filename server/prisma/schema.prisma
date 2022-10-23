@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE")
+}
+
+type UserAvatar {
+  hatChoice  Int
+  hatColor   String
+  pantsColor String
+  shirtColor String
+  skinColor  String
+}
+
+type UserPosition {
+  x Float
+  y Int
+  z Float
+}
+
+type UserRotation {
+  x Int
+  y Float
+  z Int
+}
+
+model user {
+  id                      String        @id @default(auto()) @map("_id") @db.ObjectId
+  activeSessionId         String?
+  avatar                  UserAvatar?
+  username                String
+  password                String
+  email                   String?
+  pendingSessionId        String?
+  pendingSessionTimestamp Float?
+  position                UserPosition?
+  prevGrid                String?       @default("0,0")
+  progress                String?       @default("0,0")
+  coins                   Int?
+  rotation                UserRotation?
+  createdAt               DateTime      @default(now())
+  updatedAt               DateTime      @updatedAt
+}

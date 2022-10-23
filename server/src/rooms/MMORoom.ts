@@ -1,27 +1,32 @@
 import { Room, Client, ServerError, matchMaker } from "colyseus";
-import { InteractableState, NetworkedEntityState, RoomState } from "./schema/RoomState";
-import { DI } from "../config/database.config";
+import {
+  InteractableState,
+  NetworkedEntityState,
+  RoomState,
+} from "./schema/RoomState";
 import * as matchmakerHelper from "../helpers/matchmakerHelper";
 import * as interactableObjectFactory from "../helpers/interactableObjectFactory";
-import { User } from "../entities/UserEntity";
 import { EntityManager, EntityRepository } from "@mikro-orm/mongodb";
 import { IDatabaseDriver } from "@mikro-orm/core";
 import { Position } from "./schema/Position";
 import { Rotation } from "./schema/Rotation";
 import { AvatarState } from "./schema/AvatarState";
 import { Vector, Vector2, Vector3 } from "../helpers/Vectors";
+import { PRISMA } from "../config/database.config";
+import { removeId } from "../helpers";
 
 const logger = require("../helpers/logger");
 
 export class MMORoom extends Room<RoomState> {
-
   progress: string;
   defaultObjectReset: number = 5000;
 
   onCreate(options: any) {
     this.setState(new RoomState());
 
-    logger.info("*********************** MMO ROOM CREATED ***********************");
+    logger.info(
+      "*********************** MMO ROOM CREATED ***********************"
+    );
     console.log(options);
     logger.info("***********************");
 
@@ -42,7 +47,7 @@ export class MMORoom extends Room<RoomState> {
     this.setPatchRate(50);
 
     // Set the Simulation Interval callback
-    this.setSimulationInterval(dt => {
+    this.setSimulationInterval((dt) => {
       this.state.serverTime += dt;
       this.checkObjectReset();
     });
@@ -50,11 +55,12 @@ export class MMORoom extends Room<RoomState> {
 
   /** onAuth is called before onJoin */
   async onAuth(client: Client, options: any, request: any) {
-
-    const userRepo = DI.em.fork().getRepository(User);
-
     // Check for a user with a pending sessionId that matches this client's sessionId
-    let user: User = await userRepo.findOne({ pendingSessionId: client.sessionId });
+    let user = await PRISMA.user.findFirst({
+      where: {
+        pendingSessionId: client.sessionId,
+      },
+    });
 
     if (user) {
       // A user with the pendingSessionId does exist
@@ -64,28 +70,31 @@ export class MMORoom extends Room<RoomState> {
       user.pendingSessionId = "";
 
       // Save the user changes to the database
-      await userRepo.flush();
+      await PRISMA.user.update({
+        where: { id: user.id },
+        data: removeId(user),
+      });
 
       // Returning the user object equates to returning a "truthy" value that allows the onJoin function to continue
       return user;
-    }
-    else {
+    } else {
       // No user object was found with the pendingSessionId like we expected
-      logger.error(`On Auth - No user found for session Id - ${client.sessionId}`);
+      logger.error(
+        `On Auth - No user found for session Id - ${client.sessionId}`
+      );
 
       throw new ServerError(400, "Bad session!");
     }
   }
 
   async onJoin(client: Client, options: any, auth: any) {
-
     logger.silly(`*** On Join - ${client.sessionId} ***`);
 
     // Create a new instance of NetworkedEntityState for this client and assign initial state values
     let newNetworkedUser = new NetworkedEntityState().assign({
       id: client.id,
       timestamp: this.state.serverTime,
-      username: auth.username
+      username: auth.username,
     });
 
     if (auth.position != null) {
@@ -94,7 +103,6 @@ export class MMORoom extends Room<RoomState> {
         yPos: auth.position.y,
         zPos: auth.position.z,
       });
-
     }
 
     if (auth.rotation != null) {
@@ -103,7 +111,6 @@ export class MMORoom extends Room<RoomState> {
         yRot: auth.rotation.y,
         zRot: auth.rotation.z,
       });
-
     }
 
     if (auth.avatar != null) {
@@ -119,7 +126,7 @@ export class MMORoom extends Room<RoomState> {
     // Sets the coin value of the networked user defaulting to 0 if none exists
     newNetworkedUser.coins = auth.coins || 0;
 
-    // Add the networked user to the collection; 
+    // Add the networked user to the collection;
     // This will trigger the OnAdd event of the state's "networkedUsers" collection on the client
     // and the client will spawn a character object for this use.
     this.state.networkedUsers.set(client.id, newNetworkedUser);
@@ -127,11 +134,12 @@ export class MMORoom extends Room<RoomState> {
 
   // Callback when a client has left the room
   async onLeave(client: Client, consented: boolean) {
-
-    const userRepo = DI.em.fork().getRepository(User);
-
     // Find the user object in the database by their activeSessionId
-    let user: User = await userRepo.findOne({ activeSessionId: client.sessionId });
+    let user = await PRISMA.user.findFirst({
+      where: {
+        activeSessionId: client.sessionId,
+      },
+    });
 
     if (user) {
       // Clear the user's active session
@@ -140,7 +148,10 @@ export class MMORoom extends Room<RoomState> {
       user.rotation = this.state.getUserRotation(client.sessionId);
 
       // Save the user's changes to the database
-      await userRepo.flush();
+      await PRISMA.user.update({
+        where: { id: user.id },
+        data: removeId(user),
+      });
     }
 
     try {
@@ -151,7 +162,6 @@ export class MMORoom extends Room<RoomState> {
       logger.info("let's wait for reconnection for client: " + client.id);
       const newClient = await this.allowReconnection(client, 3);
       logger.info("reconnected! client: " + newClient.id);
-
     } catch (e) {
       logger.info("disconnected! client: " + client.id);
       logger.silly(`*** Removing Networked User and Entity ${client.id} ***`);
@@ -174,10 +184,11 @@ export class MMORoom extends Room<RoomState> {
    * @param {*} data The data containing the data we want to update the newtworkedUser with
    */
   onEntityUpdate(clientID: string, data: any) {
-
     // Assumes that index 0 is going to be the sessionId of the user
     if (this.state.networkedUsers.has(`${data[0]}`) === false) {
-      logger.info(`Attempted to update client with id ${data[0]} but room state has no record of it`)
+      logger.info(
+        `Attempted to update client with id ${data[0]} but room state has no record of it`
+      );
       return;
     }
 
@@ -204,32 +215,32 @@ export class MMORoom extends Room<RoomState> {
    * @param client Client for the user moving between rooms
    * @param gridDelta The delta values of the grid change.
    * @param position The player's position they should be at in the next room.
-   * @returns 
+   * @returns
    */
   async onGridUpdate(client: Client, gridDelta: Vector2, position: Vector3) {
-
-    const userRepo = DI.em.fork().getRepository(User);
-
     // Check that the client is in the room
     if (this.state.networkedUsers.has(client.sessionId) == false) {
-
-      logger.error(`*** On Grid Update -  User not in room - can't update their grid! - ${client.sessionId} ***`);
+      logger.error(
+        `*** On Grid Update -  User not in room - can't update their grid! - ${client.sessionId} ***`
+      );
       return;
     }
 
     // Grid change must be greater that 0 in any direction
     if (gridDelta.x == 0 && gridDelta.y == 0) {
-
       logger.error(`*** On Grid Update -  No grid change detected! ***`);
       return;
     }
 
     // Get the user object by the active session Id
-    let user = await userRepo.findOne({ activeSessionId: client.sessionId });
+    let user = await PRISMA.user.findFirst({
+      where: { activeSessionId: client.sessionId },
+    });
 
     if (user == null) {
-
-      logger.error(`*** On Grid Update - Error finding player! - ${client.sessionId} ***`);
+      logger.error(
+        `*** On Grid Update - Error finding player! - ${client.sessionId} ***`
+      );
       return;
     }
 
@@ -240,22 +251,28 @@ export class MMORoom extends Room<RoomState> {
     const currentX = Number(currentGrid[0]);
     const currentY = Number(currentGrid[1]);
 
-    const newGrid: Vector2 = new Vector2(currentX + gridDelta.x, currentY + gridDelta.y);
+    const newGrid: Vector2 = new Vector2(
+      currentX + gridDelta.x,
+      currentY + gridDelta.y
+    );
 
     if (isNaN(newGrid.x) || isNaN(newGrid.y)) {
-
-      logger.error(`*** On Grid Update - Error calculating new grid position! X = ${newGrid.x}  Y = ${newGrid.y} ***`);
+      logger.error(
+        `*** On Grid Update - Error calculating new grid position! X = ${newGrid.x}  Y = ${newGrid.y} ***`
+      );
       return;
     }
 
     const newGridString: string = `${newGrid.x},${newGrid.y}`;
 
     // Get seat reservation for the player's new grid
-    const seatReservation: matchMaker.SeatReservation = await matchmakerHelper.matchMakeToRoom("lobby_room", newGridString);
+    const seatReservation: matchMaker.SeatReservation =
+      await matchmakerHelper.matchMakeToRoom("lobby_room", newGridString);
 
     if (seatReservation == null) {
-
-      logger.error(`*** On Grid Update - Error getting seat reservation at grid \"${newGridString}\" ***`);
+      logger.error(
+        `*** On Grid Update - Error getting seat reservation at grid \"${newGridString}\" ***`
+      );
       return;
     }
 
@@ -268,12 +285,15 @@ export class MMORoom extends Room<RoomState> {
     user.updatedAt = new Date();
 
     // Save the user's changes to the database
-    await userRepo.flush();
+    await PRISMA.user.update({
+      where: { id: user.id },
+      data: removeId(user),
+    });
 
     const gridUpdate: any = {
       newGridPosition: newGrid,
       prevGridPosition: new Vector2(currentX, currentY),
-      seatReservation
+      seatReservation,
     };
 
     // Send client the new seat reservation and grid data
@@ -284,8 +304,8 @@ export class MMORoom extends Room<RoomState> {
   registerForMessages() {
     // Set the callback for the "entityUpdate" message
     this.onMessage("entityUpdate", (client, entityUpdateArray) => {
-
-      if (this.state.networkedUsers.has(`${entityUpdateArray[0]}`) === false) return;
+      if (this.state.networkedUsers.has(`${entityUpdateArray[0]}`) === false)
+        return;
       this.onEntityUpdate(client.id, entityUpdateArray);
     });
 
@@ -293,16 +313,24 @@ export class MMORoom extends Room<RoomState> {
       this.handleObjectInteraction(client, objectInfoArray);
     });
 
-    this.onMessage("transitionArea", (client: Client, transitionData: Vector[]) => {
+    this.onMessage(
+      "transitionArea",
+      (client: Client, transitionData: Vector[]) => {
+        if (transitionData == null || transitionData.length < 2) {
+          logger.error(
+            `*** Grid Change Error! Missing data for grid change! ***`
+          );
 
-      if (transitionData == null || transitionData.length < 2) {
-        logger.error(`*** Grid Change Error! Missing data for grid change! ***`);
+          return;
+        }
 
-        return;
+        this.onGridUpdate(
+          client,
+          transitionData[0] as Vector2,
+          transitionData[1] as Vector3
+        );
       }
-
-      this.onGridUpdate(client, transitionData[0] as Vector2, transitionData[1] as Vector3);
-    });
+    );
 
     this.onMessage("avatarUpdate", (client: Client, state: any) => {
       this.handleAvatarUpdate(client, state);
@@ -310,15 +338,14 @@ export class MMORoom extends Room<RoomState> {
   }
 
   async handleObjectInteraction(client: Client, objectInfo: any) {
-
-    const userRepo = DI.em.fork().getRepository(User);
-
     //If the server is not yet aware of this item, lets change that
     if (this.state.interactableItems.has(objectInfo[0]) == false) {
-      let interactable = interactableObjectFactory.getStateForType(objectInfo[1]);
+      let interactable = interactableObjectFactory.getStateForType(
+        objectInfo[1]
+      );
       interactable.assign({
         id: objectInfo[0],
-        inUse: false
+        inUse: false,
       });
       this.state.interactableItems.set(objectInfo[0], interactable);
     }
@@ -327,30 +354,40 @@ export class MMORoom extends Room<RoomState> {
     let interactableObject = this.state.interactableItems.get(objectInfo[0]);
     if (interactableObject.inUse) {
       //console.log("Attempted to use an object that was already in use!");
-    }
-    else {
+    } else {
       let interactingState = this.state.networkedUsers.get(client.id);
       if (interactingState != null && interactableObject != null) {
         if (this.handleObjectCost(interactableObject, interactingState)) {
-
           interactableObject.inUse = true;
-          interactableObject.availableTimestamp = this.state.serverTime + interactableObject.useDuration;
+          interactableObject.availableTimestamp =
+            this.state.serverTime + interactableObject.useDuration;
 
-          this.broadcast("objectUsed", { interactedObjectID: interactableObject.id, interactingStateID: interactingState.id });
+          this.broadcast("objectUsed", {
+            interactedObjectID: interactableObject.id,
+            interactingStateID: interactingState.id,
+          });
 
-          let userObj: User = await userRepo.findOne({ activeSessionId: client.sessionId });
+          let userObj = await PRISMA.user.findFirst({
+            where: { activeSessionId: client.sessionId },
+          });
 
           if (userObj) {
             userObj.coins = interactingState.coins;
 
-            await userRepo.flush();
+            await PRISMA.user.update({
+              where: { id: userObj.id },
+              data: removeId(userObj),
+            });
           }
         }
       }
     }
   }
 
-  handleObjectCost(object: InteractableState, user: NetworkedEntityState): boolean {
+  handleObjectCost(
+    object: InteractableState,
+    user: NetworkedEntityState
+  ): boolean {
     let cost: number = object.coinChange;
     let worked: boolean = false;
 
@@ -364,8 +401,7 @@ export class MMORoom extends Room<RoomState> {
       if (Math.abs(cost) <= user.coins) {
         user.coins += cost;
         worked = true;
-      }
-      else {
+      } else {
         worked = false;
       }
     }
@@ -385,13 +421,12 @@ export class MMORoom extends Room<RoomState> {
   handleAvatarUpdate(client: Client, state: any) {
     let user = this.state.networkedUsers.get(client.id);
     if (user != null) {
-
       let avatarState = new AvatarState().assign({
         skinColor: state[0],
         shirtColor: state[1],
         pantsColor: state[2],
         hatColor: state[3],
-        hatChoice: state[4]
+        hatChoice: state[4],
       });
 
       user.avatar = avatarState;
@@ -400,12 +435,19 @@ export class MMORoom extends Room<RoomState> {
   }
 
   async saveAvatarUpdate(client: Client) {
-    const userRepo = DI.em.fork().getRepository(User);
-    let user: User = await userRepo.findOne({ activeSessionId: client.sessionId });
+    let user = await PRISMA.user.findFirst({
+      where: {
+        activeSessionId: client.sessionId,
+      },
+    });
     if (user) {
       let avatarState = this.state.getUserAvatarState(client.sessionId);
       user.avatar = avatarState;
-      await userRepo.flush();
+
+      await PRISMA.user.update({
+        where: { id: user.id },
+        data: removeId(user),
+      });
     }
   }
 }
