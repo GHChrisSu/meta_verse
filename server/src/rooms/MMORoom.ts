@@ -1,21 +1,17 @@
-import { Room, Client, ServerError, matchMaker } from "colyseus";
+import { Client, matchMaker, Room, ServerError } from "colyseus";
+import { PRISMA } from "../config/database.config";
+import { removeId } from "../helpers";
+import * as interactableObjectFactory from "../helpers/interactableObjectFactory";
+import logger from "../helpers/logger";
+import * as matchmakerHelper from "../helpers/matchmakerHelper";
+import { Vector, Vector2, Vector3 } from "../helpers/Vectors";
+import { AvatarState } from "./schema/AvatarState";
+import { Position } from "./schema/Position";
 import {
   InteractableState,
   NetworkedEntityState,
   RoomState,
 } from "./schema/RoomState";
-import * as matchmakerHelper from "../helpers/matchmakerHelper";
-import * as interactableObjectFactory from "../helpers/interactableObjectFactory";
-import { EntityManager, EntityRepository } from "@mikro-orm/mongodb";
-import { IDatabaseDriver } from "@mikro-orm/core";
-import { Position } from "./schema/Position";
-import { Rotation } from "./schema/Rotation";
-import { AvatarState } from "./schema/AvatarState";
-import { Vector, Vector2, Vector3 } from "../helpers/Vectors";
-import { PRISMA } from "../config/database.config";
-import { removeId } from "../helpers";
-
-const logger = require("../helpers/logger");
 
 export class MMORoom extends Room<RoomState> {
   progress: string;
@@ -88,7 +84,7 @@ export class MMORoom extends Room<RoomState> {
   }
 
   async onJoin(client: Client, options: any, auth: any) {
-    logger.silly(`*** On Join - ${client.sessionId} ***`);
+    logger.info(`*** On Join - ${client.sessionId} ***`);
 
     // Create a new instance of NetworkedEntityState for this client and assign initial state values
     let newNetworkedUser = new NetworkedEntityState().assign({
@@ -164,7 +160,7 @@ export class MMORoom extends Room<RoomState> {
       logger.info("reconnected! client: " + newClient.id);
     } catch (e) {
       logger.info("disconnected! client: " + client.id);
-      logger.silly(`*** Removing Networked User and Entity ${client.id} ***`);
+      logger.info(`*** Removing Networked User and Entity ${client.id} ***`);
 
       //remove user
       let entityStateToLeave = this.state.networkedUsers.get(client.id);

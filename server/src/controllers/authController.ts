@@ -31,7 +31,7 @@ export function prepEmail(req: any, res: any, next: any) {
  * @param user The user to update for the new session
  * @param sessionId The new session Id
  */
-function updateUserForNewSession(user: user, sessionId: string) {
+export function updateUserForNewSession(user: user, sessionId: string) {
   user.pendingSessionId = sessionId;
   user.pendingSessionTimestamp = Date.now();
   user.updatedAt = new Date();

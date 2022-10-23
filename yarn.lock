@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@trpc/client@^10.0.0-proxy-beta.25":
+  version "10.0.0-proxy-beta.25"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-proxy-beta.25.tgz#2aa8834a619fc1cda540e167628001448b944d7a"
+  integrity sha512-Q+B4w0P0yEAJPkavBNWMs4jSrFfc+TbpdB9UpDyJRVhYbkRV9Ly3yNu9H5TglzyOqQHHCBtBVRMKmoZYCrLZow==
+
+"@trpc/server@^10.0.0-proxy-beta.25":
+  version "10.0.0-proxy-beta.25"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.0.0-proxy-beta.25.tgz#a8a7579d9061afade628e22a104c75cdeda95921"
+  integrity sha512-OkLiaPrEg2R1+RRuqxE98mSsbcpu39j4Uh6mIPPeSDJn6v0nC0bsT3uJeL2F8R7EAptpT/w7OZGZDeDN56c2AQ==
+
 "@types/node@^15.12.5":
   version "15.14.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.9.tgz#bc43c990c3c9be7281868bbc7b8fdd6e2b57adfa"

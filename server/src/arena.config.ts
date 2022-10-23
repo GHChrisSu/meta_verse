@@ -1,16 +1,15 @@
 import Arena from "@colyseus/arena";
 import { monitor } from "@colyseus/monitor";
 import express from "express";
-import { connect, DI } from "./config/database.config";
+import { connect } from "./config/database.config";
 import userRoutes from "./routes/userRoutes";
-
-const logger = require("./helpers/logger");
 
 /**
  * Import your Room files
  */
 import { ChatRoom } from "./rooms/ChatRoom";
 import { MMORoom } from "./rooms/MMORoom";
+import logger from "./helpers/logger";
 
 export default Arena({
   getId: () => "Your Colyseus App",
@@ -32,11 +31,11 @@ export default Arena({
     app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
     // Register routes for our simple user auth
-    app.use("/users", userRoutes);
+    app.use("/trpc", userRoutes);
 
     // Connect to our database
     connect().then(async () => {
-      logger.silly(`*** Connected to Database! ***`);
+      logger.info(`*** Connected to Database! ***`);
     });
 
     app.get("/", (req, res) => {
