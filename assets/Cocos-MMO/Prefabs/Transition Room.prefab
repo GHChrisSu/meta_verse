@@ -1,14 +1,15 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "Transition Room",
     "_objFlags": 0,
     "_native": "",
     "data": {
       "__id__": 1
     },
     "optimizationPolicy": 0,
-    "asyncLoadAssets": false
+    "asyncLoadAssets": false,
+    "persistent": false
   },
   {
     "__type__": "cc.Node",
@@ -1835,10 +1836,12 @@
       "__id__": 87
     },
     "_size": 0.15,
-    "_luminance": 1013.2118364233778,
+    "_luminance": 3183.0961731893194,
     "_term": 0,
     "_range": 10,
-    "_id": ""
+    "_id": "",
+    "_luminanceLDR": 828.9312951013852,
+    "_luminanceHDR": 3183.0961731893194
   },
   {
     "__type__": "cc.CompPrefabInfo",

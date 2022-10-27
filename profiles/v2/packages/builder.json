@@ -1,5 +1,5 @@
 {
-  "__version__": "1.2.8",
+  "__version__": "1.3.3",
   "version": {
     "builder": "1.2.3"
   },
@@ -19,11 +19,13 @@
               },
               "polyfills": {
                 "asyncFunctions": true
-              }
+              },
+              "__version__": "1.0.0"
             },
             "cocos-service": {
               "configID": "7b0c5d",
-              "services": []
+              "services": [],
+              "__version__": "1.0.0"
             }
           },
           "name": "ColyseusTechDemo-Cocos-MMO",
@@ -61,5 +63,8 @@
   },
   "common": {
     "startScene": "72f80804-3ccb-48c3-85db-374282c9317c"
+  },
+  "log": {
+    "level": 4
   }
 }

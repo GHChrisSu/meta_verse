@@ -1,14 +1,15 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "1x0",
     "_objFlags": 0,
     "_native": "",
     "data": {
       "__id__": 1
     },
     "optimizationPolicy": 0,
-    "asyncLoadAssets": false
+    "asyncLoadAssets": false,
+    "persistent": false
   },
   {
     "__type__": "cc.Node",
@@ -2927,10 +2928,12 @@
       "__id__": 136
     },
     "_size": 0.15,
-    "_luminance": 1013.2118364233778,
+    "_luminance": 3183.0961731893194,
     "_term": 0,
     "_range": 10,
-    "_id": ""
+    "_id": "",
+    "_luminanceLDR": 828.9312951013852,
+    "_luminanceHDR": 3183.0961731893194
   },
   {
     "__type__": "cc.CompPrefabInfo",
@@ -5476,10 +5479,12 @@
       "__id__": 259
     },
     "_size": 0.15,
-    "_luminance": 1013.2118364233778,
+    "_luminance": 3183.0961731893194,
     "_term": 0,
     "_range": 10,
-    "_id": ""
+    "_id": "",
+    "_luminanceLDR": 828.9312951013852,
+    "_luminanceHDR": 3183.0961731893194
   },
   {
     "__type__": "cc.CompPrefabInfo",
@@ -8025,10 +8030,12 @@
       "__id__": 382
     },
     "_size": 0.15,
-    "_luminance": 1013.2118364233778,
+    "_luminance": 3183.0961731893194,
     "_term": 0,
     "_range": 10,
-    "_id": ""
+    "_id": "",
+    "_luminanceLDR": 828.9312951013852,
+    "_luminanceHDR": 3183.0961731893194
   },
   {
     "__type__": "cc.CompPrefabInfo",
@@ -10574,10 +10581,12 @@
       "__id__": 505
     },
     "_size": 0.15,
-    "_luminance": 1013.2118364233778,
+    "_luminance": 3183.0961731893194,
     "_term": 0,
     "_range": 10,
-    "_id": ""
+    "_id": "",
+    "_luminanceLDR": 828.9312951013852,
+    "_luminanceHDR": 3183.0961731893194
   },
   {
     "__type__": "cc.CompPrefabInfo",
@@ -20736,6 +20745,62 @@
       },
       {
         "__id__": 1198
+      }
+    ],
+    "nestedPrefabInstanceRoots": [
+      {
+        "__id__": 534
+      },
+      {
+        "__id__": 548
+      },
+      {
+        "__id__": 558
+      },
+      {
+        "__id__": 572
+      },
+      {
+        "__id__": 582
+      },
+      {
+        "__id__": 596
+      },
+      {
+        "__id__": 610
+      },
+      {
+        "__id__": 624
+      },
+      {
+        "__id__": 638
+      },
+      {
+        "__id__": 652
+      },
+      {
+        "__id__": 666
+      },
+      {
+        "__id__": 680
+      },
+      {
+        "__id__": 694
+      },
+      {
+        "__id__": 703
+      },
+      {
+        "__id__": 717
+      },
+      {
+        "__id__": 728
+      },
+      {
+        "__id__": 744
+      },
+      {
+        "__id__": 761
       }
     ]
   },

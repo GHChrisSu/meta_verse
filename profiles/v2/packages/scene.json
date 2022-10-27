@@ -19,15 +19,15 @@
   "camera-infos": {
     "f46876e4-e81b-4931-b493-6d367be385e7": {
       "position": {
-        "x": 50,
-        "y": 50,
-        "z": 50
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "rotation": {
-        "x": -0.27984814233312133,
-        "y": 0.3647051996310009,
-        "z": 0.11591689595929514,
-        "w": 0.8804762392171493
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
       },
       "viewCenter": {
         "x": 0,
@@ -73,7 +73,7 @@
     }
   },
   "camera-uuids": [
-    "56ff2397-ea42-4f84-9461-6874411ff217"
+    "f46876e4-e81b-4931-b493-6d367be385e7"
   ],
   "float-window": {
     "position": {
@@ -94,5 +94,26 @@
         }
       }
     }
+  },
+  "scene": {
+    "native": false
+  },
+  "camera": {
+    "fov": 45,
+    "far": 10000,
+    "near": 0.01,
+    "color": [
+      48,
+      48,
+      48,
+      255
+    ],
+    "wheelSpeed": 0.01,
+    "wanderSpeed": 10,
+    "enableAcceleration": true,
+    "far2D": 10000,
+    "near2D": 1,
+    "wheelSpeed2D": 6,
+    "size": "__default_design__"
   }
 }
