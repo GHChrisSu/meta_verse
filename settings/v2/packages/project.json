@@ -26,5 +26,13 @@
     "legacyFbxImporter": {
       "visible": true
     }
+  },
+  "general": {
+    "designResolution": {
+      "width": 1200,
+      "height": 720,
+      "fitHeight": true,
+      "fitWidth": false
+    }
   }
 }

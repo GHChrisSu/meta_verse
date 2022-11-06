@@ -1,0 +1,14 @@
+{
+  "ver": "1.0.7",
+  "importer": "sprite-atlas",
+  "imported": false,
+  "uuid": "0df6f387-8c7f-4e76-82cf-a2e102c57d00",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "atlasTextureName": "card.png",
+    "format": 2,
+    "textureUuid": "7fd8fc0e-12e6-4380-a78e-e1ab33929453@6c48a",
+    "uuid": "0df6f387-8c7f-4e76-82cf-a2e102c57d00"
+  }
+}

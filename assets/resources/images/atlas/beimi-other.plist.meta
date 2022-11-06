@@ -1,0 +1,106 @@
+{
+  "ver": "1.0.7",
+  "importer": "sprite-atlas",
+  "imported": false,
+  "uuid": "43b45bf1-27e9-42d1-9c58-62bcad9c0f9f",
+  "files": [],
+  "subMetas": {
+    "25223": {
+      "uuid": "734d8adf-4558-49eb-a32d-343b6f0f0912",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "edec8": {
+      "uuid": "1a86912d-6b83-4424-98ea-ca2b90d0e0d5",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "e458f": {
+      "uuid": "a0626b48-2ec3-44be-89e6-11f325345f61",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "1548e": {
+      "uuid": "b3b92715-846b-4194-a88e-f6d32915c087",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "5db14": {
+      "uuid": "26d87561-26b6-48cd-b7e7-60ae18a2f142",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "b5301": {
+      "uuid": "64213bf1-bffb-404e-b23b-214f6d50db77",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "dad56": {
+      "uuid": "bd4e4390-1a0f-4823-bc44-f3012b64aba5",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {},
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    }
+  },
+  "userData": {
+    "atlasTextureName": "beimi-other.png",
+    "format": 3,
+    "textureUuid": "04fcfdb2-cf9b-44d0-a8bd-2f26658c5792@6c48a",
+    "uuid": "43b45bf1-27e9-42d1-9c58-62bcad9c0f9f"
+  }
+}

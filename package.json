@@ -1,6 +1,6 @@
 {
   "creator": {
-    "version": "3.6.1"
+    "version": "3.6.2"
   },
   "dependencies": {
     "@trpc/client": "^10.0.0-proxy-beta.25",
@@ -12,5 +12,5 @@
   "name": "MetaVerse",
   "type": "3d",
   "uuid": "edde09ae-eb34-46a1-9d9a-b357063aaac0",
-  "version": "3.6.1"
+  "version": "3.6.2"
 }

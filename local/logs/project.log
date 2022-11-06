@@ -1,135 +1,129 @@
-2022-10-23T13:24:10.950Z - log: [Package] menu@1.0.0 enable
-2022-10-23T13:24:10.955Z - log: [Package] profile@1.0.0 enable
-2022-10-23T13:24:10.969Z - log: [Package] project@1.0.2 enable
-2022-10-23T13:24:10.973Z - log: [Package] messages@1.0.0 enable
-2022-10-23T13:24:10.975Z - log: [Package] program@1.0.0 enable
-2022-10-23T13:24:10.981Z - log: [Package] tester@1.0.0 enable
-2022-10-23T13:24:10.985Z - log: [Package] preferences@1.0.0 enable
-2022-10-23T13:24:15.588Z - log: Load engine in /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine
-2022-10-23T13:24:16.041Z - log: Register native engine in /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/native
-2022-10-23T13:24:16.044Z - log: [Package] engine@1.0.6 enable
-2022-10-23T13:24:17.634Z - log: [Package] programming@1.0.0 enable
-2022-10-23T13:24:17.728Z - warn: 
-2022-10-23T13:24:17.941Z - log: [Package] device@1.0.1 enable
-2022-10-23T13:24:17.971Z - log: [Package] ui-kit@1.0.1 enable
-2022-10-23T13:24:17.995Z - log: [Package] engine-extends@1.0.0 enable
-2022-10-23T13:24:18.071Z - log: [Package] asset-db@1.0.0 enable
-2022-10-23T13:24:18.072Z - warn: 
-2022-10-23T13:24:18.139Z - log: [Package] scene@1.0.0 enable
-2022-10-23T13:24:18.351Z - log: [Package] server@1.0.0 enable
-2022-10-23T13:24:18.389Z - log: [Package] utils@1.0.0 enable
-2022-10-23T13:24:18.389Z - warn: 
-2022-10-23T13:24:19.498Z - warn: Browserslist: caniuse-lite is outdated. Please run:
-npx browserslist@latest --update-db
-
-Why you should do it regularly:
-https://github.com/browserslist/browserslist#browsers-data-updating
-2022-10-23T13:24:28.192Z - warn: 
-2022-10-23T13:24:28.192Z - warn: 
-2022-10-23T13:24:28.193Z - warn: 
-2022-10-23T13:24:28.245Z - warn: 
-2022-10-23T13:24:28.245Z - warn: 
-2022-10-23T13:24:28.245Z - warn: 
-2022-10-23T13:24:28.254Z - warn: 
-2022-10-23T13:24:28.255Z - warn: 
-2022-10-23T13:24:28.255Z - warn: 
-2022-10-23T13:24:29.883Z - warn: 
-2022-10-23T13:24:29.983Z - log: [Package] preview@1.0.1 enable
-2022-10-23T13:24:30.023Z - log: [Package] animator@1.0.0 enable
-2022-10-23T13:24:30.074Z - log: pluginManager init: 1.797ms
-2022-10-23T13:24:31.867Z - log: Profile changed: builder (log.level: 4)
-2022-10-23T13:24:31.872Z - log: [Package] builder@1.3.3 enable
-2022-10-23T13:24:31.912Z - log: [Package] shortcuts@1.0.1 enable
-2022-10-23T13:24:31.954Z - log: [Package] animation-graph@1.0.0 enable
-2022-10-23T13:24:31.985Z - log: [Package] about@1.0.0 enable
-2022-10-23T13:24:32.024Z - log: [Package] assets@1.0.0 enable
-2022-10-23T13:24:32.055Z - log: [Package] console@1.0.0 enable
-2022-10-23T13:24:32.287Z - log: [Package] extension@3.0.16 enable
-2022-10-23T13:24:32.318Z - log: [Package] hierarchy@1.0.0 enable
-2022-10-23T13:24:32.349Z - log: [Package] inspector@1.0.0 enable
-2022-10-23T13:24:32.378Z - log: [Package] lightmap@1.0.4 enable
-2022-10-23T13:24:32.933Z - log: [Package] localization-editor@1.0.0 enable
-2022-10-23T13:24:32.952Z - log: [Build-plugin] register pkg localization-editor: 13.279ms
-2022-10-23T13:24:33.001Z - log: [Package] node-library@1.0.1 enable
-2022-10-23T13:24:33.032Z - log: [Package] package-asset@1.0.0 enable
-2022-10-23T13:24:33.072Z - log: [Package] process@1.0.0 enable
-2022-10-23T13:24:33.106Z - log: [Package] reference-image@1.0.0 enable
-2022-10-23T13:24:33.131Z - log: [Package] alipay-mini-game@1.0.1 enable
-2022-10-23T13:24:33.134Z - log: [Build-plugin] register pkg alipay-mini-game: 2.832ms
-2022-10-23T13:24:33.162Z - log: [Package] android@1.0.1 enable
-2022-10-23T13:24:33.170Z - log: [Build-plugin] register pkg android: 8.28ms
-2022-10-23T13:24:33.196Z - log: [Package] baidu-mini-game@1.0.1 enable
-2022-10-23T13:24:33.200Z - log: [Build-plugin] register pkg baidu-mini-game: 3.959ms
-2022-10-23T13:24:33.283Z - log: [Package] bytedance-mini-game@1.0.2 enable
-2022-10-23T13:24:33.287Z - log: [Build-plugin] register pkg bytedance-mini-game: 3.497ms
-2022-10-23T13:24:33.312Z - log: [Package] certificate@1.0.0 enable
-2022-10-23T13:24:33.339Z - log: [Package] channel-upload-tools@1.0.0 enable
-2022-10-23T13:24:33.367Z - log: [Package] cocos-play@1.0.1 enable
-2022-10-23T13:24:33.373Z - log: [Build-plugin] register pkg cocos-play: 5.337ms
-2022-10-23T13:24:33.397Z - log: [Package] huawei-agc@1.0.0 enable
-2022-10-23T13:24:33.402Z - log: [Build-plugin] register pkg huawei-agc: 4.438ms
-2022-10-23T13:24:33.426Z - log: [Package] huawei-quick-game@1.0.1 enable
-2022-10-23T13:24:33.431Z - log: [Build-plugin] register pkg huawei-quick-game: 3.909ms
-2022-10-23T13:24:34.066Z - log: [Package] ios@1.0.0 enable
-2022-10-23T13:24:34.072Z - log: [Build-plugin] register pkg ios: 5.625ms
-2022-10-23T13:24:34.097Z - log: [Package] linux@1.0.0 enable
-2022-10-23T13:24:34.098Z - log: [Build-plugin] register pkg linux: 1.208ms
-2022-10-23T13:24:34.124Z - log: [Package] mac@1.0.0 enable
-2022-10-23T13:24:34.130Z - log: [Build-plugin] register pkg mac: 5.242ms
-2022-10-23T13:24:34.262Z - log: [Package] native@1.0.2 enable
-2022-10-23T13:24:34.268Z - log: [Build-plugin] register pkg native: 6.077ms
-2022-10-23T13:24:34.291Z - log: [Package] ohos@1.0.0 enable
-2022-10-23T13:24:34.296Z - log: [Build-plugin] register pkg ohos: 3.831ms
-2022-10-23T13:24:34.323Z - log: [Package] open-harmonyos@1.0.0 enable
-2022-10-23T13:24:34.324Z - log: [Build-plugin] register pkg open-harmonyos: 1.073ms
-2022-10-23T13:24:34.348Z - log: [Package] oppo-mini-game@1.0.1 enable
-2022-10-23T13:24:34.353Z - log: [Build-plugin] register pkg oppo-mini-game: 4.77ms
-2022-10-23T13:24:34.376Z - log: [Package] runtime-dev-tools@1.0.0 enable
-2022-10-23T13:24:34.400Z - log: [Package] vivo-mini-game@1.0.1 enable
-2022-10-23T13:24:34.404Z - log: [Build-plugin] register pkg vivo-mini-game: 4.251ms
-2022-10-23T13:24:34.454Z - log: [Package] web-desktop@1.0.1 enable
-2022-10-23T13:24:34.460Z - log: [Build-plugin] register pkg web-desktop: 4.869ms
-2022-10-23T13:24:34.492Z - log: [Package] web-mobile@1.0.1 enable
-2022-10-23T13:24:34.497Z - log: [Build-plugin] register pkg web-mobile: 3.934ms
-2022-10-23T13:24:34.526Z - log: [Package] wechatgame@1.0.2 enable
-2022-10-23T13:24:34.532Z - log: [Build-plugin] register pkg wechatgame: 5.974ms
-2022-10-23T13:24:34.556Z - log: [Package] windows@1.0.1 enable
-2022-10-23T13:24:34.560Z - log: [Build-plugin] register pkg windows: 3.637ms
-2022-10-23T13:24:34.583Z - log: [Package] xiaomi-quick-game@1.0.1 enable
-2022-10-23T13:24:34.587Z - log: [Build-plugin] register pkg xiaomi-quick-game: 4.463ms
-2022-10-23T13:24:34.891Z - log: [Package] cocos-service@3.0.4 enable
-2022-10-23T13:24:34.898Z - log: [Build-plugin] register pkg cocos-service: 2.502ms
-2022-10-23T13:24:35.136Z - log: [Im-plugin] Check im-plugin version.
-2022-10-23T13:24:35.156Z - log: [Package] im-plugin@3.0.9 enable
-2022-10-23T13:24:35.208Z - log: [Package] ccc-quick-finder@1.4.0.20210910 enable
-2022-10-23T13:24:35.244Z - log: [Package] ccc-skeleton-viewer@1.4.0.20220128 enable
-2022-10-23T13:24:35.359Z - log: [Package] simple-code@3.3.9 enable
-2022-10-23T13:24:35.393Z - log: [Package] colyseus-sdk@0.14.0 enable
-2022-10-23T13:24:36.437Z - log: [Im-plugin] Im-plugin online version is 3.0.9.
-2022-10-23T13:24:36.437Z - log: [Im-plugin] Im-plugin local version is 3.0.9.
-2022-10-23T13:24:36.438Z - log: [Im-plugin] Im-plugin need not update.
-2022-10-23T13:24:41.971Z - warn: 
-2022-10-23T13:24:41.971Z - warn: 
-2022-10-23T13:24:41.972Z - warn: 
-2022-10-23T13:24:43.432Z - log: [Scene] Please specifiy a default value for "cc.EditorExtendable.__editorExtras__" property at its declaration:
-
- 
-// Before:
-@property(...)
-myProp;
-// After:
-@property(...)
-myProp = 0;
-2022-10-23T13:24:43.454Z - log: [Scene] Please specifiy a default value for "CCPropertyOverrideInfo.value" property at its declaration:
-
- 
-// Before:
-@property(...)
-myProp;
-// After:
-@property(...)
-myProp = 0;
-2022-10-23T13:24:43.455Z - log: [Scene] Please specifiy a default value for "cc.PrefabInfo.asset" property at its declaration:
+2022-11-06T06:30:23.960Z - log: [Package] menu@1.0.0 enable
+2022-11-06T06:30:23.967Z - log: [Package] profile@1.0.0 enable
+2022-11-06T06:30:23.982Z - log: [Package] project@1.0.2 enable
+2022-11-06T06:30:23.986Z - log: [Package] messages@1.0.0 enable
+2022-11-06T06:30:23.988Z - log: [Package] program@1.0.0 enable
+2022-11-06T06:30:23.993Z - log: [Package] tester@1.0.0 enable
+2022-11-06T06:30:23.999Z - log: [Package] preferences@1.0.0 enable
+2022-11-06T06:30:28.393Z - log: Load engine in /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine
+2022-11-06T06:30:28.851Z - log: Register native engine in /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/native
+2022-11-06T06:30:28.855Z - log: [Package] engine@1.0.7 enable
+2022-11-06T06:30:30.495Z - log: [Package] programming@1.0.0 enable
+2022-11-06T06:30:30.574Z - warn: 
+2022-11-06T06:30:30.824Z - log: [Package] device@1.0.1 enable
+2022-11-06T06:30:30.852Z - log: [Package] ui-kit@1.0.1 enable
+2022-11-06T06:30:30.878Z - log: [Package] engine-extends@1.0.0 enable
+2022-11-06T06:30:30.953Z - log: [Package] asset-db@1.0.0 enable
+2022-11-06T06:30:30.953Z - warn: 
+2022-11-06T06:30:30.995Z - log: [Package] scene@1.0.0 enable
+2022-11-06T06:30:31.209Z - log: [Package] server@1.0.0 enable
+2022-11-06T06:30:31.228Z - warn: 
+2022-11-06T06:30:31.244Z - log: [Package] utils@1.0.0 enable
+2022-11-06T06:30:36.548Z - warn: 
+2022-11-06T06:30:36.549Z - warn: 
+2022-11-06T06:30:36.549Z - warn: 
+2022-11-06T06:30:36.577Z - warn: 
+2022-11-06T06:30:36.577Z - warn: 
+2022-11-06T06:30:36.577Z - warn: 
+2022-11-06T06:30:36.582Z - warn: 
+2022-11-06T06:30:36.582Z - warn: 
+2022-11-06T06:30:36.583Z - warn: 
+2022-11-06T06:30:36.704Z - warn: 
+2022-11-06T06:30:36.704Z - warn: 
+2022-11-06T06:30:36.704Z - warn: 
+2022-11-06T06:30:38.340Z - warn: 
+2022-11-06T06:30:38.448Z - log: [Package] preview@1.0.1 enable
+2022-11-06T06:30:38.482Z - log: [Package] animator@1.0.0 enable
+2022-11-06T06:30:38.526Z - log: pluginManager init: 0.127ms
+2022-11-06T06:30:40.369Z - log: [Package] builder@1.3.3 enable
+2022-11-06T06:30:40.403Z - log: [Package] shortcuts@1.0.1 enable
+2022-11-06T06:30:40.494Z - log: [Package] animation-graph@1.0.0 enable
+2022-11-06T06:30:40.530Z - log: [Package] about@1.0.0 enable
+2022-11-06T06:30:40.561Z - log: [Package] assets@1.0.0 enable
+2022-11-06T06:30:40.590Z - log: [Package] console@1.0.0 enable
+2022-11-06T06:30:40.822Z - log: [Package] extension@3.0.16 enable
+2022-11-06T06:30:40.866Z - log: [Package] hierarchy@1.0.0 enable
+2022-11-06T06:30:40.904Z - log: [Package] inspector@1.0.0 enable
+2022-11-06T06:30:40.934Z - log: [Package] lightmap@1.0.4 enable
+2022-11-06T06:30:41.511Z - log: [Package] localization-editor@1.0.0 enable
+2022-11-06T06:30:41.530Z - log: [Build-plugin] register pkg localization-editor: 12.424ms
+2022-11-06T06:30:41.563Z - log: [Package] node-library@1.0.1 enable
+2022-11-06T06:30:41.587Z - log: [Package] package-asset@1.0.0 enable
+2022-11-06T06:30:41.621Z - log: [Package] process@1.0.0 enable
+2022-11-06T06:30:41.662Z - log: [Package] reference-image@1.0.0 enable
+2022-11-06T06:30:41.688Z - log: [Package] alipay-mini-game@1.0.1 enable
+2022-11-06T06:30:41.690Z - log: [Build-plugin] register pkg alipay-mini-game: 1.437ms
+2022-11-06T06:30:41.714Z - log: [Package] android@1.0.1 enable
+2022-11-06T06:30:41.722Z - log: [Build-plugin] register pkg android: 7.276ms
+2022-11-06T06:30:41.803Z - log: [Package] baidu-mini-game@1.0.1 enable
+2022-11-06T06:30:41.808Z - log: [Build-plugin] register pkg baidu-mini-game: 4.66ms
+2022-11-06T06:30:41.836Z - log: [Package] bytedance-mini-game@1.0.2 enable
+2022-11-06T06:30:41.839Z - log: [Build-plugin] register pkg bytedance-mini-game: 2.769ms
+2022-11-06T06:30:41.863Z - log: [Package] certificate@1.0.0 enable
+2022-11-06T06:30:41.885Z - log: [Package] channel-upload-tools@1.0.0 enable
+2022-11-06T06:30:41.912Z - log: [Package] cocos-play@1.0.1 enable
+2022-11-06T06:30:41.917Z - log: [Build-plugin] register pkg cocos-play: 4.879ms
+2022-11-06T06:30:41.943Z - log: [Package] huawei-agc@1.0.0 enable
+2022-11-06T06:30:41.947Z - log: [Build-plugin] register pkg huawei-agc: 3.78ms
+2022-11-06T06:30:41.970Z - log: [Package] huawei-quick-game@1.0.1 enable
+2022-11-06T06:30:41.975Z - log: [Build-plugin] register pkg huawei-quick-game: 4.258ms
+2022-11-06T06:30:42.622Z - log: [Package] ios@1.0.0 enable
+2022-11-06T06:30:42.645Z - log: [Build-plugin] register pkg ios: 23.115ms
+2022-11-06T06:30:42.677Z - log: [Package] linux@1.0.0 enable
+2022-11-06T06:30:42.679Z - log: [Build-plugin] register pkg linux: 1.131ms
+2022-11-06T06:30:42.706Z - log: [Package] mac@1.0.0 enable
+2022-11-06T06:30:42.713Z - log: [Build-plugin] register pkg mac: 7.626ms
+2022-11-06T06:30:42.844Z - log: [Package] native@1.0.2 enable
+2022-11-06T06:30:42.851Z - log: [Build-plugin] register pkg native: 6.589ms
+2022-11-06T06:30:42.879Z - log: [Package] ohos@1.0.0 enable
+2022-11-06T06:30:42.883Z - log: [Build-plugin] register pkg ohos: 3.443ms
+2022-11-06T06:30:42.910Z - log: [Package] open-harmonyos@1.0.0 enable
+2022-11-06T06:30:42.911Z - log: [Build-plugin] register pkg open-harmonyos: 1.106ms
+2022-11-06T06:30:42.937Z - log: [Package] oppo-mini-game@1.0.1 enable
+2022-11-06T06:30:42.942Z - log: [Build-plugin] register pkg oppo-mini-game: 4.476ms
+2022-11-06T06:30:42.967Z - log: [Package] runtime-dev-tools@1.0.0 enable
+2022-11-06T06:30:42.993Z - log: [Package] vivo-mini-game@1.0.1 enable
+2022-11-06T06:30:43.001Z - log: [Build-plugin] register pkg vivo-mini-game: 7.18ms
+2022-11-06T06:30:43.049Z - log: [Package] web-desktop@1.0.1 enable
+2022-11-06T06:30:43.054Z - log: [Build-plugin] register pkg web-desktop: 3.689ms
+2022-11-06T06:30:43.090Z - log: [Package] web-mobile@1.0.1 enable
+2022-11-06T06:30:43.095Z - log: [Build-plugin] register pkg web-mobile: 4.475ms
+2022-11-06T06:30:43.124Z - log: [Package] wechatgame@1.0.2 enable
+2022-11-06T06:30:43.129Z - log: [Build-plugin] register pkg wechatgame: 4.491ms
+2022-11-06T06:30:43.152Z - log: [Package] windows@1.0.1 enable
+2022-11-06T06:30:43.156Z - log: [Build-plugin] register pkg windows: 3.324ms
+2022-11-06T06:30:43.183Z - log: [Package] xiaomi-quick-game@1.0.1 enable
+2022-11-06T06:30:43.188Z - log: [Build-plugin] register pkg xiaomi-quick-game: 4.178ms
+2022-11-06T06:30:43.501Z - log: [Package] cocos-service@3.0.4 enable
+2022-11-06T06:30:43.511Z - log: [Build-plugin] register pkg cocos-service: 3.977ms
+2022-11-06T06:30:43.541Z - log: [Package] importer@1.1.0 enable
+2022-11-06T06:30:43.785Z - log: [Im-plugin] Check im-plugin version.
+2022-11-06T06:30:43.791Z - log: [Package] im-plugin@3.0.9 enable
+2022-11-06T06:30:43.843Z - log: [Package] ccc-quick-finder@1.4.0.20210910 enable
+2022-11-06T06:30:43.881Z - log: [Package] ccc-skeleton-viewer@1.4.0.20220128 enable
+2022-11-06T06:30:43.999Z - log: [Package] simple-code@3.3.9 enable
+2022-11-06T06:30:44.028Z - log: [Package] colyseus-sdk@0.14.0 enable
+2022-11-06T06:30:44.428Z - log: [Package] oops-plugin-excel-to-json@1.0.0 enable
+2022-11-06T06:30:44.459Z - log: [Package] oops-framework@1.0.0 enable
+2022-11-06T06:30:44.481Z - log: [Package] oops-plugin-hot-update@1.0.0 enable
+2022-11-06T06:30:44.486Z - log: [Build-plugin] register pkg oops-plugin-hot-update: 4.82ms
+2022-11-06T06:30:46.414Z - log: [Im-plugin] Im-plugin online version is 3.0.9.
+2022-11-06T06:30:46.414Z - log: [Im-plugin] Im-plugin local version is 3.0.9.
+2022-11-06T06:30:46.415Z - log: [Im-plugin] Im-plugin need not update.
+2022-11-06T06:30:52.905Z - warn: [Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/UI/card/card.png[Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/UI/card/card.png  
+at TexturePackerImporter.import (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/modules/engine-extensions/extensions/engine-extends/dist/importer/importers/texture-packer.ccc:1:1685)
+2022-11-06T06:30:52.952Z - warn: [Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-image-other.png[Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-image-other.png  
+at TexturePackerImporter.import (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/modules/engine-extensions/extensions/engine-extends/dist/importer/importers/texture-packer.ccc:1:1685)
+2022-11-06T06:30:52.990Z - warn: [Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-1.png[Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-1.png  
+at TexturePackerImporter.import (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/modules/engine-extensions/extensions/engine-extends/dist/importer/importers/texture-packer.ccc:1:1685)
+2022-11-06T06:30:52.997Z - warn: [Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-4.png[Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-4.png  
+at TexturePackerImporter.import (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/modules/engine-extensions/extensions/engine-extends/dist/importer/importers/texture-packer.ccc:1:1685)
+2022-11-06T06:30:53.001Z - warn: [Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-other.png[Asset DB] Parse Error: Unable to find file Texture, the path: /Users/suhao/github/meta_verse/assets/resources/images/atlas/beimi-other.png  
+at TexturePackerImporter.import (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/modules/engine-extensions/extensions/engine-extends/dist/importer/importers/texture-packer.ccc:1:1685)
+2022-11-06T06:30:55.313Z - warn: 
+2022-11-06T06:30:55.313Z - warn: 
+2022-11-06T06:30:55.313Z - warn: 
+2022-11-06T06:30:56.703Z - log: [Scene] Please specifiy a default value for "cc.EditorExtendable.__editorExtras__" property at its declaration:
 
  
 // Before:
@@ -138,7 +132,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.455Z - log: [Scene] Please specifiy a default value for "cc.PrefabInfo.nestedPrefabInstanceRoots" property at its declaration:
+2022-11-06T06:30:56.727Z - log: [Scene] Please specifiy a default value for "CCPropertyOverrideInfo.value" property at its declaration:
 
  
 // Before:
@@ -147,9 +141,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.459Z - log: [Scene] The 'default' attribute of 'ColorDesc.beginAccesses' must be an array
-2022-10-23T13:24:43.459Z - log: [Scene] The 'default' attribute of 'ColorDesc.endAccesses' must be an array
-2022-10-23T13:24:43.470Z - log: [Scene] Please specifiy a default value for "cc.animation.TrackBinding.proxy" property at its declaration:
+2022-11-06T06:30:56.728Z - log: [Scene] Please specifiy a default value for "cc.PrefabInfo.asset" property at its declaration:
 
  
 // Before:
@@ -158,7 +150,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.470Z - log: [Scene] Please specifiy a default value for "cc.animation.Channel._curve" property at its declaration:
+2022-11-06T06:30:56.728Z - log: [Scene] Please specifiy a default value for "cc.PrefabInfo.nestedPrefabInstanceRoots" property at its declaration:
 
  
 // Before:
@@ -167,7 +159,9 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.471Z - log: [Scene] Please specifiy a default value for "cc.animation.SingleChannelTrack._channel" property at its declaration:
+2022-11-06T06:30:56.732Z - log: [Scene] The 'default' attribute of 'ColorDesc.beginAccesses' must be an array
+2022-11-06T06:30:56.732Z - log: [Scene] The 'default' attribute of 'ColorDesc.endAccesses' must be an array
+2022-11-06T06:30:56.745Z - log: [Scene] Please specifiy a default value for "cc.animation.TrackBinding.proxy" property at its declaration:
 
  
 // Before:
@@ -176,7 +170,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.472Z - log: [Scene] Please specifiy a default value for "cc.animation.VectorTrack._channels" property at its declaration:
+2022-11-06T06:30:56.745Z - log: [Scene] Please specifiy a default value for "cc.animation.Channel._curve" property at its declaration:
 
  
 // Before:
@@ -185,7 +179,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.472Z - log: [Scene] Please specifiy a default value for "cc.animation.ColorTrack._channels" property at its declaration:
+2022-11-06T06:30:56.746Z - log: [Scene] Please specifiy a default value for "cc.animation.SingleChannelTrack._channel" property at its declaration:
 
  
 // Before:
@@ -194,7 +188,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.472Z - log: [Scene] Please specifiy a default value for "cc.animation.SizeTrack._channels" property at its declaration:
+2022-11-06T06:30:56.746Z - log: [Scene] Please specifiy a default value for "cc.animation.VectorTrack._channels" property at its declaration:
 
  
 // Before:
@@ -203,7 +197,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.472Z - log: [Scene] Please specifiy a default value for "cc.animation.Transition.from" property at its declaration:
+2022-11-06T06:30:56.747Z - log: [Scene] Please specifiy a default value for "cc.animation.ColorTrack._channels" property at its declaration:
 
  
 // Before:
@@ -212,7 +206,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.473Z - log: [Scene] Please specifiy a default value for "cc.animation.Transition.to" property at its declaration:
+2022-11-06T06:30:56.747Z - log: [Scene] Please specifiy a default value for "cc.animation.SizeTrack._channels" property at its declaration:
 
  
 // Before:
@@ -221,7 +215,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.473Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._entryState" property at its declaration:
+2022-11-06T06:30:56.747Z - log: [Scene] Please specifiy a default value for "cc.animation.Transition.from" property at its declaration:
 
  
 // Before:
@@ -230,7 +224,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.473Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._exitState" property at its declaration:
+2022-11-06T06:30:56.747Z - log: [Scene] Please specifiy a default value for "cc.animation.Transition.to" property at its declaration:
 
  
 // Before:
@@ -239,7 +233,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.473Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._anyState" property at its declaration:
+2022-11-06T06:30:56.748Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._entryState" property at its declaration:
 
  
 // Before:
@@ -248,7 +242,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.473Z - log: [Scene] Please specifiy a default value for "cc.animation.Layer._stateMachine" property at its declaration:
+2022-11-06T06:30:56.748Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._exitState" property at its declaration:
 
  
 // Before:
@@ -257,7 +251,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.474Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticVectorLikeTrackValues._values" property at its declaration:
+2022-11-06T06:30:56.748Z - log: [Scene] Please specifiy a default value for "cc.animation.StateMachine._anyState" property at its declaration:
 
  
 // Before:
@@ -266,7 +260,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.474Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticVectorLikeTrackValues._isQuantized" property at its declaration:
+2022-11-06T06:30:56.748Z - log: [Scene] Please specifiy a default value for "cc.animation.Layer._stateMachine" property at its declaration:
 
  
 // Before:
@@ -275,7 +269,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.474Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticTrack.times" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticVectorLikeTrackValues._values" property at its declaration:
 
  
 // Before:
@@ -284,7 +278,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.475Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticTrack.values" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticVectorLikeTrackValues._isQuantized" property at its declaration:
 
  
 // Before:
@@ -293,7 +287,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.475Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.originalPrecision" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticTrack.times" property at its declaration:
 
  
 // Before:
@@ -302,7 +296,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.475Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.min" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.ExoticTrack.values" property at its declaration:
 
  
 // Before:
@@ -311,7 +305,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.475Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.extent" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.originalPrecision" property at its declaration:
 
  
 // Before:
@@ -320,7 +314,7 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.475Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.values" property at its declaration:
+2022-11-06T06:30:56.749Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.min" property at its declaration:
 
  
 // Before:
@@ -329,100 +323,118 @@ myProp;
 // After:
 @property(...)
 myProp = 0;
-2022-10-23T13:24:43.510Z - log: [Scene] 'cc.ParticleSystem2D.color' hides inherited property 'cc.UIRenderer.color'. To make the current property override that implementation, add the `override: true` attribute please.
-2022-10-23T13:24:43.637Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._receiveShadow", which its default value is type of Boolean.
-2022-10-23T13:24:43.637Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._useNormalmap", which its default value is type of Boolean.
-2022-10-23T13:24:43.637Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._usePBR", which its default value is type of Boolean.
-2022-10-23T13:24:43.637Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._lodEnable", which its default value is type of Boolean.
-2022-10-23T13:24:43.983Z - info: [Scene] [Physics][Bullet]: Using asmjs Bullet libs.
-2022-10-23T13:24:44.004Z - info: [Scene] [PHYSICS]: using builtin.
-2022-10-23T13:24:44.789Z - log: [Scene] Cocos Creator v3.6.1
-2022-10-23T13:24:44.789Z - info: [Scene] Forward render pipeline initialized.
-2022-10-23T13:24:45.065Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+2022-11-06T06:30:56.750Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.extent" property at its declaration:
+
+ 
+// Before:
+@property(...)
+myProp;
+// After:
+@property(...)
+myProp = 0;
+2022-11-06T06:30:56.750Z - log: [Scene] Please specifiy a default value for "cc.animation.QuantizedFloatArray.values" property at its declaration:
+
+ 
+// Before:
+@property(...)
+myProp;
+// After:
+@property(...)
+myProp = 0;
+2022-11-06T06:30:56.787Z - log: [Scene] 'cc.ParticleSystem2D.color' hides inherited property 'cc.UIRenderer.color'. To make the current property override that implementation, add the `override: true` attribute please.
+2022-11-06T06:30:56.925Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._receiveShadow", which its default value is type of Boolean.
+2022-11-06T06:30:56.925Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._useNormalmap", which its default value is type of Boolean.
+2022-11-06T06:30:56.925Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._usePBR", which its default value is type of Boolean.
+2022-11-06T06:30:56.925Z - log: [Scene] No needs to indicate the 'cc.Boolean' attribute for "cc.Terrain._lodEnable", which its default value is type of Boolean.
+2022-11-06T06:30:57.202Z - info: [Scene] [Physics][Bullet]: Using asmjs Bullet libs.
+2022-11-06T06:30:57.219Z - info: [Scene] [PHYSICS]: using builtin.
+2022-11-06T06:30:57.926Z - log: [Scene] Cocos Creator v3.6.2
+2022-11-06T06:30:57.927Z - info: [Scene] Forward render pipeline initialized.
+2022-11-06T06:30:58.208Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.115Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.260Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.117Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.262Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.135Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.278Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.138Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.289Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.187Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.328Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.194Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.338Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ec/ecce98d8de4f15307f046d3b27ed60e77f07ff0c.js:64:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.205Z - warn: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.352Z - warn: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
     at Module.report (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/84/cce:/internal/code-quality/cr.mjs:15:13)
     at _reportPossibleCrUseOfInteractable (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js:17:17)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-2022-10-23T13:24:45.209Z - warn: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
+2022-11-06T06:30:58.357Z - warn: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
 Is this intended? If not, this may indicate a circular reference.
 For example:
 
@@ -454,112 +466,112 @@ export class Foo {            //  ↓
                               // - Refactor your module structure(recommended), or
                               // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
 }
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at parseAttributes (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111421:7)
-    at defineProp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111117:5)
-    at declareProperties (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111315:11)
-    at CCClass (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111346:5)
-    at eval (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:219085:21)
-2022-10-23T13:24:45.210Z - log: [Scene] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:24:45.210Z - log: [Scene] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:24:45.225Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at parseAttributes (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117378:7)
+    at defineProp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117074:5)
+    at declareProperties (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117272:11)
+    at CCClass (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117303:5)
+    at eval (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:224915:21)
+2022-11-06T06:30:58.358Z - log: [Scene] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:30:58.358Z - log: [Scene] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:30:58.372Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/77/7733ae4849ae18c23d392a90e794c83df9a4b866.js:62:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:45.229Z - info: [Scene] [PHYSICS]: switch from builtin to bullet.
-2022-10-23T13:24:47.126Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:30:58.549Z - info: [Scene] [PHYSICS]: switch from builtin to bullet.
+2022-11-06T06:31:00.633Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.126Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.633Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.127Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.634Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.127Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.634Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.128Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.635Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.128Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.635Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.129Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.636Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ec/ecce98d8de4f15307f046d3b27ed60e77f07ff0c.js:64:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.131Z - warn: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.638Z - warn: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
     at Module.report (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/84/cce:/internal/code-quality/cr.mjs:15:13)
     at _reportPossibleCrUseOfInteractable (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js:17:17)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
     at Array.forEach (<anonymous>)
-2022-10-23T13:24:47.132Z - warn: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
+2022-11-06T06:31:00.639Z - warn: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
 Is this intended? If not, this may indicate a circular reference.
 For example:
 
@@ -591,273 +603,238 @@ export class Foo {            //  ↓
                               // - Refactor your module structure(recommended), or
                               // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
 }
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at parseAttributes (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111421:7)
-    at defineProp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111117:5)
-    at declareProperties (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111315:11)
-    at CCClass (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111346:5)
-    at eval (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:219085:21)
-2022-10-23T13:24:47.132Z - log: [Scene] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:24:47.132Z - log: [Scene] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:24:47.136Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at parseAttributes (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117378:7)
+    at defineProp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117074:5)
+    at declareProperties (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117272:11)
+    at CCClass (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117303:5)
+    at eval (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:224915:21)
+2022-11-06T06:31:00.639Z - log: [Scene] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:31:00.639Z - log: [Scene] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:31:00.643Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
     at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/77/7733ae4849ae18c23d392a90e794c83df9a4b866.js:62:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:24:47.841Z - error: [Scene] Environment Controller - Instance already exists!Error: [Scene] Environment Controller - Instance already exists!
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.693Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.693Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.694Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.694Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.694Z - warn: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Scene] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.694Z - warn: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Scene] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.696Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ec/ecce98d8de4f15307f046d3b27ed60e77f07ff0c.js:64:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.698Z - warn: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Scene] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at Array.forEach (<anonymous>)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at Module.report (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/84/cce:/internal/code-quality/cr.mjs:15:13)
+    at _reportPossibleCrUseOfInteractable (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js:17:17)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
+    at Array.forEach (<anonymous>)
+2022-11-06T06:31:00.698Z - warn: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
+Is this intended? If not, this may indicate a circular reference.
+For example:
+
+ 
+// foo.ts
+import { _decorator } from 'cc';
+import { Bar } from './bar';  // Given that './bar' also reference 'foo.ts'.
+                              // When importing './bar', execution of './bar' is hung on to wait execution of 'foo.ts',
+                              // the `Bar` imported here is `undefined` until './bar' finish its execution.
+                              // It leads to that
+@_decorator.ccclass           //  ↓
+export class Foo {            //  ↓
+    @_decorator.type(Bar)     //  → is equivalent to `@_decorator.type(undefined)`
+    public bar: Bar;          // To eliminate this error, either:
+                              // - Refactor your module structure(recommended), or
+                              // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
+}Error: [Scene] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
+Is this intended? If not, this may indicate a circular reference.
+For example:
+
+ 
+// foo.ts
+import { _decorator } from 'cc';
+import { Bar } from './bar';  // Given that './bar' also reference 'foo.ts'.
+@_decorator.ccclass           //  ↓
+export class Foo {            //  ↓
+    @_decorator.type(Bar)     //  → is equivalent to `@_decorator.type(undefined)`
+    public bar: Bar;          // To eliminate this error, either:
+                              // - Refactor your module structure(recommended), or
+                              // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
+}
+    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
+    at Logger.record (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
+    at console.warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at parseAttributes (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117378:7)
+    at defineProp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117074:5)
+    at declareProperties (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117272:11)
+    at CCClass (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:117303:5)
+    at eval (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:224915:21)
+2022-11-06T06:31:00.699Z - log: [Scene] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:31:00.699Z - log: [Scene] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
+2022-11-06T06:31:00.702Z - warn: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Scene] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
+    at warn (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139774:12)
+    at warnID (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:139988:5)
+    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165028:7)
+    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165048:7)
+    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/77/7733ae4849ae18c23d392a90e794c83df9a4b866.js:62:7)
+    at doExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
+    at postOrderExec (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
+2022-11-06T06:31:00.886Z - warn: [Scene] Missing class: 4e980BPHPtCgozJhOw88LZeError: [Scene] Missing class: 4e980BPHPtCgozJhOw88LZe
+    at Object.classFinder (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:1:2131)
+    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:102569:34)
+    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:118294:30)
+    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:118235:29)
+    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:118443:38)
+    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:118269:40)
+    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:118241:29)
+2022-11-06T06:31:00.902Z - error: [Scene] Script "4e980BPHPtCgozJhOw88LZe" attached to "DiZhuSummaryClick" is missing or invalid. Detailed information:
+Node path: "summary_lose/script/DiZhuSummaryClick"
+Script UUID: "4e98004f-1cfb-4282-8cc9-84ec3cf0b65e"
+Class ID: "4e980BPHPtCgozJhOw88LZe"
+Error: [Scene] Script "4e980BPHPtCgozJhOw88LZe" attached to "DiZhuSummaryClick" is missing or invalid. Detailed information:
+Node path: "summary_lose/script/DiZhuSummaryClick"
+Script UUID: "4e98004f-1cfb-4282-8cc9-84ec3cf0b65e"
+Class ID: "4e980BPHPtCgozJhOw88LZe"
+
+    at report (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:1:1156)
+    at reportByWalker (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:1:1252)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:1:1893
+    at ObjectWalkerBehavior.walk (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/object-walker.ccc:1:2365)
+    at ObjectWalkerBehavior.forEach (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/object-walker.ccc:1:825)
+    at ObjectWalkerBehavior.parseObject (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/object-walker.ccc:1:306)
+    at doWalkProperties (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/object-walker.ccc:1:2158)
+2022-11-06T06:37:20.879Z - log: [Window] Deprecated as of 10.7.0. highlight(lang, code, ...args) has been deprecated.
+2022-11-06T06:37:20.880Z - log: [Window] Deprecated as of 10.7.0. Please use highlight(code, options) instead.
+https://github.com/highlightjs/highlight.js/issues/2277
+2022-11-06T06:39:22.289Z - error: [Scene] Environment Controller - Instance already exists!Error: [Scene] Environment Controller - Instance already exists!
     at new EnvironmentController (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/93/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Managers/EnvironmentController.ts:28:21)
-    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:114015:15)
-    at EnvironmentController._instantiate (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:100861:43)
-    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
+    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:119972:15)
+    at EnvironmentController._instantiate (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:98090:43)
+    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
     at Array.forEach (<anonymous>)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
-2022-10-23T13:24:47.853Z - error: [Scene] Networked Entity Factory - Instance already exists!Error: [Scene] Networked Entity Factory - Instance already exists!
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
+2022-11-06T06:39:22.301Z - error: [Scene] Networked Entity Factory - Instance already exists!Error: [Scene] Networked Entity Factory - Instance already exists!
     at new NetworkedEntityFactory (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/b5/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Managers/NetworkedEntityFactory.ts:30:21)
-    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:114015:15)
-    at NetworkedEntityFactory._instantiate (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:100861:43)
-    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
+    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:119972:15)
+    at NetworkedEntityFactory._instantiate (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:98090:43)
+    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
     at Array.forEach (<anonymous>)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
-2022-10-23T13:24:47.857Z - error: [Scene] Chat Manager - Instance already exists!Error: [Scene] Chat Manager - Instance already exists!
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
+2022-11-06T06:39:22.309Z - error: [Scene] Chat Manager - Instance already exists!Error: [Scene] Chat Manager - Instance already exists!
     at new ChatManager (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/6a/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Managers/ChatManager.ts:28:15)
-    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:114015:15)
-    at ChatManager._instantiate (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:100861:43)
-    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
+    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:119972:15)
+    at ChatManager._instantiate (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:98090:43)
+    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
     at Array.forEach (<anonymous>)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
-2022-10-23T13:24:47.859Z - error: [Scene] UI Manager - Instance already exists!Error: [Scene] UI Manager - Instance already exists!
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
+2022-11-06T06:39:22.313Z - error: [Scene] UI Manager - Instance already exists!Error: [Scene] UI Manager - Instance already exists!
     at new UIManager (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/7b/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Managers/UIManager.ts:21:12)
-    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:114015:15)
-    at UIManager._instantiate (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:100861:43)
-    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
+    at Function.doInstantiate [as _clone] (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:119972:15)
+    at UIManager._instantiate (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:98090:43)
+    at ComponentOperation.cacheComp (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/component.ccc:1:915)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2112
     at Array.forEach (<anonymous>)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
-2022-10-23T13:31:03.266Z - info: [Preview] preview process is ready
-2022-10-23T13:31:03.492Z - info: [Preview] [Physics][Bullet]: Using asmjs Bullet libs.
-2022-10-23T13:31:03.516Z - info: [Preview] [PHYSICS]: using builtin.
-2022-10-23T13:31:04.040Z - log: [Preview] Cocos Creator v3.6.1
-2022-10-23T13:31:04.041Z - info: [Preview] Forward render pipeline initialized.
-2022-10-23T13:31:04.268Z - warn: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.324Z - warn: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ef/efdb05b07b58ab1d6f1508ed5877ca51db3d9589.js:23:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.325Z - warn: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.343Z - warn: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/a6/a6dc6ec20b96d7acf38aa3f18d2ee2e9b7432706.js:53:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.349Z - warn: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.Error: [Preview] 'systemEvent' is deprecated since v3.4.0, please use 'input' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.397Z - warn: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.Error: [Preview] 'SystemEventType' is deprecated since v3.3.0, please use 'Input.EventType' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/c6/c6a04e4db9720e101e6196b12d23cb1077706e21.js:57:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.431Z - warn: [Preview] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Preview] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/ec/ecce98d8de4f15307f046d3b27ed60e77f07ff0c.js:64:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.442Z - warn: [Preview] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
-    at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
-    at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12Error: [Preview] Found possible circular reference in "pack:///chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js", happened when use "Interactable" imported from "./Interactable"  Error: 
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
-    at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
-    at Array.forEach (<anonymous>)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:491:10)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
-    at Module.report (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/84/cce:/internal/code-quality/cr.mjs:15:13)
-    at _reportPossibleCrUseOfInteractable (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/4dc720e87c1567967a1b4eb942b88666f65464fe.js:17:17)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/4d/file:/Users/suhao/github/meta_verse/assets/Cocos-MMO/Scripts/Environment/InteractableTrigger.ts:10:20)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:493:28
-    at Array.forEach (<anonymous>)
-2022-10-23T13:31:04.443Z - warn: [Preview] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
-Is this intended? If not, this may indicate a circular reference.
-For example:
-
- 
-// foo.ts
-import { _decorator } from 'cc';
-import { Bar } from './bar';  // Given that './bar' also reference 'foo.ts'.
-                              // When importing './bar', execution of './bar' is hung on to wait execution of 'foo.ts',
-                              // the `Bar` imported here is `undefined` until './bar' finish its execution.
-                              // It leads to that
-@_decorator.ccclass           //  ↓
-export class Foo {            //  ↓
-    @_decorator.type(Bar)     //  → is equivalent to `@_decorator.type(undefined)`
-    public bar: Bar;          // To eliminate this error, either:
-                              // - Refactor your module structure(recommended), or
-                              // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
-}Error: [Preview] You are explicitly specifying `undefined` type to cc property "owner" of cc class "InteractableTrigger".
-Is this intended? If not, this may indicate a circular reference.
-For example:
-
- 
-// foo.ts
-import { _decorator } from 'cc';
-import { Bar } from './bar';  // Given that './bar' also reference 'foo.ts'.
-@_decorator.ccclass           //  ↓
-export class Foo {            //  ↓
-    @_decorator.type(Bar)     //  → is equivalent to `@_decorator.type(undefined)`
-    public bar: Bar;          // To eliminate this error, either:
-                              // - Refactor your module structure(recommended), or
-                              // - specify the type as cc class name: `@_decorator.type('Bar'/* or any name you specified for `Bar` */)`
-}
-    at Logger._logHandler (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:318)
-    at Logger.record (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1260)
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at parseAttributes (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111421:7)
-    at defineProp (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111117:5)
-    at declareProperties (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111315:11)
-    at CCClass (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:111346:5)
-    at eval (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:219085:21)
-2022-10-23T13:31:04.444Z - log: [Preview] No need to specify the "type" of "Area.gridPosition" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:31:04.444Z - log: [Preview] No need to specify the "type" of "Area.areaDimensions" because cc.Vec2 is a child class of ValueType.
-2022-10-23T13:31:04.461Z - warn: [Preview] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.Error: [Preview] 'UITransformComponent' is deprecated since v1.2.0, please use 'UITransform' instead.
-    at warn (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134564:12)
-    at warnID (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:134778:5)
-    at _checkObsoleteByName (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159271:7)
-    at __checkObsolete__ (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:159291:7)
-    at Object.execute (file:///Users/suhao/github/meta_verse/temp/programming/packer-driver/targets/editor/chunks/77/7733ae4849ae18c23d392a90e794c83df9a4b866.js:62:7)
-    at doExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-2022-10-23T13:31:04.467Z - info: [Preview] [PHYSICS]: switch from builtin to bullet.
-2022-10-23T13:31:11.614Z - error: [Window] request settings failed!Error: request settings failed!
-    at <process:scene>
-    at XMLHttpRequest.eval (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:8492:24)
-2022-10-23T13:31:11.602Z - log: [Preview] request settings failed!Error: request settings failed!
-    at XMLHttpRequest.eval (/Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:8492:24)
-2022-10-23T13:31:32.928Z - warn: Attempting to call a function in a renderer window that has been closed or released.
-Function provided here: timer-util.ccc:1:1017
-2022-10-23T13:31:34.230Z - warn: 
-2022-10-23T13:31:34.231Z - warn: 
-2022-10-23T13:31:34.433Z - warn: 
-2022-10-23T13:31:51.832Z - log: 21:31:36 [DEBUG]: WORKAREA WIDTH 2560.00, HEIGHT 1338.00
-21:31:36 [DEBUG]: FRAME SCALE = 1.00
-21:31:36 [DEBUG]: Project Config:
-21:31:36 [DEBUG]:     project dir: /Applications/CocosCreator/Creator/3.6.1/CocosCreator.app/Contents/Resources/resources/3d/engine/native/simulator/Release/SimulatorApp-Mac.app/Contents/Resources/
-21:31:36 [DEBUG]:     writable path: $(PROJDIR)/
-21:31:36 [DEBUG]:     script file: $(PROJDIR)/main.js
-21:31:36 [DEBUG]:     frame size: 667 x 375
-21:31:36 [DEBUG]:     frame scale: 1.00
-21:31:36 [DEBUG]:     show console: NO
-21:31:36 [DEBUG]:     write debug log: NO ()
-21:31:36 [DEBUG]:     listen: 
-21:31:36 [DEBUG]:     debugger: none
-21:31:36 [DEBUG]:     add searching path:
-21:31:36 [DEBUG]: 
-
-
-21:31:37 [INFO]: Metal Feature Set: MTLFeatureSet_macOS_GPUFamily2_v1
-21:31:37 [INFO]: Device validator enabled.
-21:31:37 [DEBUG]: D/ Initializing V8, version: 9.1.269
-
-21:31:37 [DEBUG]: D/ libuv version: 1.23.1-dev
-
-21:31:37 [DEBUG]: D/ Number of interfaces: 15
-
-21:31:37 [DEBUG]: D/ Debugger listening..., visit [
-
-21:31:37 [DEBUG]: D/     devtools://devtools/bundled/js_app.html?v8only=true&ws=26.26.26.1:5086/00010002-0003-4004-8005-000600070008
-
-21:31:37 [DEBUG]: D/     devtools://devtools/bundled/js_app.html?v8only=true&ws=192.168.0.203:5086/00010002-0003-4004-8005-000600070008
-
-21:31:37 [DEBUG]: D/     devtools://devtools/bundled/js_app.html?v8only=true&ws=127.0.0.1:5086/00010002-0003-4004-8005-000600070008
-
-21:31:37 [DEBUG]: D/   ] in chrome browser to debug!
-
-21:31:37 [DEBUG]: D/ For help see https://nodejs.org/en/docs/inspector
-
-21:31:40 [DEBUG]: In the constructor of HttpClient!
-21:31:40 [DEBUG]: iShow!
-21:31:50 [DEBUG]: D/ Response failed, error buffer: 请求超时。
-
-21:31:51 [DEBUG]: HttpClient::destroyInstance begin
-21:31:51 [DEBUG]: HttpClient destructor
-21:31:51 [DEBUG]: HttpClient::destroyInstance() finished!
-21:31:51 [DEBUG]: D/ ScriptEngine::cleanup begin ...
-
-21:31:51 [DEBUG]: D/ GC begin ..., (js->native map) size: 2, all objects: 410
-
-21:31:51 [DEBUG]: D/ XMLHttpRequest_finalize, 0x7f9228f460a0 ... 
-
-21:31:51 [DEBUG]: D/ GC end ..., (js->native map) size: 1, all objects: 409
-
-21:31:51 [DEBUG]: D/ GC begin ..., (js->native map) size: 1, all objects: 409
-
-21:31:51 [DEBUG]: D/ GC end ..., (js->native map) size: 1, all objects: 409
-
-21:31:51 [DEBUG]: D/ GC begin ..., (js->native map) size: 0, all objects: -1
-
-21:31:51 [DEBUG]: D/ Function object is released!
-
-21:31:51 [DEBUG]: D/ GC end ..., (js->native map) size: 0, all objects: -1
-
-21:31:51 [DEBUG]: D/ ScriptEngine::cleanup end ...
-
-21:31:51 [INFO]: Device thread detached.
-
-2022-10-23T14:06:40.485Z - error: [Preview]TRPCClientError: Failed to fetcherrorInfo.stack ? '/n ' : ''
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:2069
+2022-11-06T06:41:15.193Z - warn: [Scene] Dependent components cannot be removed.Error: [Scene] Dependent components cannot be removed.
+    at CompManager.removeComponent (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/component/index.ccc:1:1321)
+    at NodeManager.removeComponent (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:11312)
+    at NodeManager.removeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:9951)
+    at GeneralSceneFacade.removeNodeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/general-scene-facade.ccc:1:7929)
+    at SceneFacadeManager.removeNodeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:10075)
+    at step (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:720)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:1613
+2022-11-06T06:42:58.299Z - warn: [Scene] Dependent components cannot be removed.Error: [Scene] Dependent components cannot be removed.
+    at CompManager.removeComponent (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/component/index.ccc:1:1321)
+    at NodeManager.removeComponent (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:11312)
+    at NodeManager.removeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:9951)
+    at GeneralSceneFacade.removeNodeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/general-scene-facade.ccc:1:7929)
+    at SceneFacadeManager.removeNodeArrayElement (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:10075)
+    at step (/Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:720)
+    at /Applications/CocosCreator/Creator/3.6.2/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:1613
+2022-11-06T06:44:06.467Z - error: [Preview]Cannot read properties of null (reading 'error')errorInfo.stack ? '/n TypeError: Cannot read properties of null (reading 'error')
+    at CreateUserMenu.processUserAuth (http://localhost:7457/scripting/x/chunks/2b/2b7e1cf19a6c142aa82c676c71f531bd9eb736df.js:292:24)
+    at http://localhost:7457/scripting/x/chunks/2b/2b7e1cf19a6c142aa82c676c71f531bd9eb736df.js:264:18
+    at xhr.onload (http://localhost:7457/scripting/x/chunks/de/de5d8d59472905c224c06e5fac54729593089930.js:577:13)' : ''
