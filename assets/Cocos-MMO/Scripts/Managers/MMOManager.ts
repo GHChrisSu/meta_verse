@@ -14,6 +14,7 @@ import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
 import Colyseus from "db://colyseus-sdk/colyseus.js";
 import type {
   ChatRoomState,
+  DDZRoomState,
   NetworkedEntityState,
   RoomState,
 } from "../../../../Server/src/rooms/schema/RoomState";
@@ -138,6 +139,13 @@ export class MMOManager extends Component {
 
     console.warn(`Asked for server time but no room yet!`);
     return 0;
+  }
+
+  public get client(): Colyseus.Client | null {
+    return this._client;
+  }
+  public set client(value: Colyseus.Client | null) {
+    this._client = value;
   }
 
   // @property
@@ -313,7 +321,7 @@ export class MMOManager extends Component {
     }
   }
 
-  private quickSignIn() {
+  private async quickSignIn() {
     const email: string | null = MMOPlayerPrefs.email;
     const password: string | null = MMOPlayerPrefs.password;
 
@@ -322,14 +330,12 @@ export class MMOManager extends Component {
       return;
     }
 
-    this.userLogIn(email, password, (res: RequestResponse) => {
-      if (res.error === false) {
-        this.setCurrentUser(res);
-        this.loadGridAndConsumeSeatReservation(res);
-      } else {
-        console.error(`Error with quick sign in - ${res.output}`);
-      }
-    });
+    const res = await this.userLogIn(email, password);
+
+    if (!res.error) {
+      this.setCurrentUser(res);
+      this.loadGridAndConsumeSeatReservation(res);
+    }
   }
 
   /**
@@ -340,7 +346,7 @@ export class MMOManager extends Component {
    * @param onComplete Callback to execute when the request has completed
    */
   public async userSignUp(username: string, email: string, password: string) {
-    const res = await this.trpc.signup.mutate({
+    const res = await this.trpc.signUp.mutate({
       username,
       email,
       password,
@@ -355,14 +361,13 @@ export class MMOManager extends Component {
    * @param password Password of the user account
    * @param onComplete Callback to execute when the request has completed
    */
-  public userLogIn(
-    email: string,
-    password: string,
-    onComplete: (res: RequestResponse) => void
-  ) {
-    let requestData = `email=${email}&password=${password}`;
+  public async userLogIn(email: string, password: string) {
+    const res = await this.trpc.logIn.mutate({
+      email,
+      password,
+    });
 
-    this.serverRequest("POST", "users/login", requestData, onComplete);
+    return res;
   }
 
   public setCurrentUser(response: RequestResponse) {
@@ -442,27 +447,6 @@ export class MMOManager extends Component {
       });
 
     ChatManager.Instance.setRoom(chatRoom);
-  }
-
-  private serverRequest(
-    method: string,
-    endPoint: string,
-    requestData: string,
-    onComplete: (requestResponse: RequestResponse) => void
-  ) {
-    let xhr: XMLHttpRequest = new XMLHttpRequest();
-
-    xhr.onload = () => {
-      const reqResponse: RequestResponse = xhr.response;
-      onComplete(reqResponse);
-    };
-
-    const fullUrl = `${this.WebRequestEndPoint}/${endPoint}`;
-
-    xhr.open(method, fullUrl);
-    xhr.responseType = "json";
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send(requestData);
   }
 
   private async awaitObjectInteraction(objectID: string, entityID: string) {

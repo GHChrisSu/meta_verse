@@ -1,44 +1,65 @@
-
-import { _decorator, Component, Node, Material, MeshRenderer, Mesh, ParticleSystem } from 'cc';
-import { NetworkedEntity } from '../../Player/NetworkedEntity';
-import { Interactable } from '../Interactable';
+import {
+  _decorator,
+  Component,
+  Node,
+  Material,
+  MeshRenderer,
+  Mesh,
+  ParticleSystem,
+  director,
+} from "cc";
+import { DDZRoomState } from "../../../../../Server/src/rooms/schema/RoomState";
+import { DDZManager } from "../../Managers/DDZManager";
+import { MMOManager } from "../../Managers/MMOManager";
+import { NetworkedEntity } from "../../Player/NetworkedEntity";
+import { Interactable } from "../Interactable";
 const { ccclass, property } = _decorator;
 
-@ccclass('ButtonPodium')
+@ccclass("ButtonPodium")
 export class ButtonPodium extends Interactable {
-    
-    @property({type:ParticleSystem})
-    private interactionEffects: ParticleSystem = null;
-    @property({type:Material})
-    private inUseMat: Material = null;
-    @property({type: Material})
-    private availableMat: Material = null;
-    @property({type:MeshRenderer})
-    private buttonRenderer: MeshRenderer = null;
+  @property({ type: ParticleSystem })
+  private interactionEffects: ParticleSystem = null;
+  @property({ type: Material })
+  private inUseMat: Material = null;
+  @property({ type: Material })
+  private availableMat: Material = null;
+  @property({ type: MeshRenderer })
+  private buttonRenderer: MeshRenderer = null;
 
-    public playerInRange(entity: NetworkedEntity) {
-        //Only display in range stuff if the local user is the one in range!
-        if (entity.IsMine)
-            super.playerInRange(entity);
-    }
+  public playerInRange(entity: NetworkedEntity) {
+    //Only display in range stuff if the local user is the one in range!
+    if (entity.IsMine) super.playerInRange(entity);
 
-    public playerLeftRange(entity: NetworkedEntity) {
-        //Only display in range stuff if the local user is the one in range!
-        if (entity.IsMine)
-            super.playerLeftRange(entity);
-    }
+    director.loadScene("DDZScene", async () => {
+      const client = MMOManager.Instance.client;
+      const id = MMOManager.Instance.CurrentUser.id;
+      let ddzRoom: Colyseus.Room<DDZRoomState> =
+        await client.joinOrCreate<DDZRoomState>("ddz_room", {
+          id: "asdiuhkwehaf",
+        });
 
-    public onSuccessfulUse(entity: NetworkedEntity) {
-        super.onSuccessfulUse(entity);
+      DDZManager.Instance.setRoom(ddzRoom);
+    });
+  }
 
-        //Button podium also has interaction effects, so play them!
-        this.interactionEffects.play();
-    }
+  public playerLeftRange(entity: NetworkedEntity) {
+    //Only display in range stuff if the local user is the one in range!
+    if (entity.IsMine) super.playerLeftRange(entity);
+  }
 
-    public setInUse(inUse: boolean) {
-        super.setInUse(inUse);
+  public onSuccessfulUse(entity: NetworkedEntity) {
+    super.onSuccessfulUse(entity);
 
-        //Set the button material to the appropriate one
-        this.buttonRenderer.material = this.isInUse ? this.inUseMat : this.availableMat;
-    }
+    //Button podium also has interaction effects, so play them!
+    this.interactionEffects.play();
+  }
+
+  public setInUse(inUse: boolean) {
+    super.setInUse(inUse);
+
+    //Set the button material to the appropriate one
+    this.buttonRenderer.material = this.isInUse
+      ? this.inUseMat
+      : this.availableMat;
+  }
 }

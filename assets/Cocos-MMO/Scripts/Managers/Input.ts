@@ -1,86 +1,88 @@
-import { _decorator, Component, EventKeyboard, systemEvent, SystemEventType, director, macro } from "cc";
+import {
+  _decorator,
+  Component,
+  EventKeyboard,
+  systemEvent,
+  SystemEventType,
+  director,
+  macro,
+} from "cc";
 const { ccclass, property } = _decorator;
 
-@ccclass('Input')
+@ccclass("Input")
 export class Input extends Component {
+  private static _pressedKeys: Map<number, boolean>;
+  private static _downKeys: Map<number, number>;
+  private static _inputKeys: Map<string, number>;
 
-    private static _pressedKeys: Map<number, boolean>;
-    private static _downKeys: Map<number, number>;
-    private static _inputKeys: Map<string, number>;
+  onLoad() {
+    this.initialize();
+  }
 
-    onLoad() {
-        this.initialize();
+  onDestroy() {
+    systemEvent.off(SystemEventType.KEY_DOWN, Input.handleKeyboardInput, this);
+    systemEvent.off(SystemEventType.KEY_UP, Input.handleKeyboardInput, this);
+  }
+
+  private initialize() {
+    systemEvent.on(SystemEventType.KEY_DOWN, Input.handleKeyboardInput, this);
+    systemEvent.on(SystemEventType.KEY_UP, Input.handleKeyboardInput, this);
+
+    Input._pressedKeys = new Map<number, boolean>();
+    Input._downKeys = new Map<number, number>();
+
+    this.initializeInputKeys();
+
+    console.log(`Input Initialized!`);
+  }
+
+  private initializeInputKeys() {
+    Input._inputKeys = new Map<string, number>(Object.entries(macro.KEY));
+  }
+
+  public static getInputKeyValue(key: string): number {
+    const lKey = key.toLowerCase();
+
+    if (this._inputKeys.has(lKey)) {
+      return this._inputKeys.get(lKey);
     }
 
-    onDestroy() {
-        systemEvent.off(SystemEventType.KEY_DOWN, Input.handleKeyboardInput, this);
-        systemEvent.off(SystemEventType.KEY_UP, Input.handleKeyboardInput, this);
+    console.error(`No Key Value for provided key: \"${lKey}\"`);
+    return -1;
+  }
+
+  public static getKey(keyCode: number): boolean {
+    if (this._pressedKeys.has(keyCode)) {
+      return this._pressedKeys.get(keyCode);
     }
 
-    private initialize() {
-        systemEvent.on(SystemEventType.KEY_DOWN, Input.handleKeyboardInput, this);
-        systemEvent.on(SystemEventType.KEY_UP, Input.handleKeyboardInput, this);
+    return false;
+  }
 
-        Input._pressedKeys = new Map<number, boolean>();
-        Input._downKeys = new Map<number, number>();
-
-        this.initializeInputKeys();
-
-        console.log(`Input Initialized!`);
-    }
-    
-    private initializeInputKeys() {
-        Input._inputKeys = new Map<string, number>(Object.entries(macro.KEY));
+  public static getKeyDown(keyCode: number): boolean {
+    if (this._downKeys.has(keyCode)) {
+      return this._downKeys.get(keyCode) === director.getTotalFrames();
     }
 
-    public static getInputKeyValue(key: string): number {
+    return false;
+  }
 
-        const lKey = key.toLowerCase();
-
-        if(this._inputKeys.has(lKey)) {
-            return this._inputKeys.get(lKey);
+  private static handleKeyboardInput(event: EventKeyboard) {
+    switch (event.type) {
+      case SystemEventType.KEY_DOWN:
+        if (Input._downKeys.has(event.keyCode) === false) {
+          Input._downKeys.set(event.keyCode, director.getTotalFrames());
         }
 
-        console.error(`No Key Value for provided key: \"${lKey}\"`);
-        return -1;
-    }
-
-    public static getKey(keyCode: number): boolean {
-        if(this._pressedKeys.has(keyCode)) {
-            return this._pressedKeys.get(keyCode);
+        Input._pressedKeys.set(event.keyCode, true);
+        break;
+      case SystemEventType.KEY_UP:
+        if (Input._downKeys.has(event.keyCode)) {
+          Input._downKeys.delete(event.keyCode);
         }
 
-        return false;
+        Input._pressedKeys.set(event.keyCode, false);
+        break;
     }
-
-    public static getKeyDown(keyCode: number): boolean {
-        if(this._downKeys.has(keyCode)) {
-
-            return this._downKeys.get(keyCode) === director.getTotalFrames();
-        }
-
-        return false;
-    }
-
-    private static handleKeyboardInput(event: EventKeyboard) {
-
-        switch(event.type) {
-            case SystemEventType.KEY_DOWN:
-                
-                if(Input._downKeys.has(event.keyCode) === false) {
-                    Input._downKeys.set(event.keyCode, director.getTotalFrames());
-                }
-
-                Input._pressedKeys.set(event.keyCode, true);
-                break;
-            case SystemEventType.KEY_UP:
-                
-                if(Input._downKeys.has(event.keyCode)) {
-                    Input._downKeys.delete(event.keyCode);
-                }
-
-                Input._pressedKeys.set(event.keyCode, false);
-                break;
-        }
-    }
+  }
 }

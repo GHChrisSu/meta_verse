@@ -84,7 +84,7 @@ export class MMORoom extends Room<RoomState> {
   }
 
   async onJoin(client: Client, options: any, auth: any) {
-    logger.info(`*** On Join - ${client.sessionId} ***`);
+    logger.info(`*** On Join - ${client.sessionId} ${client.id} ***`, options);
 
     // Create a new instance of NetworkedEntityState for this client and assign initial state values
     let newNetworkedUser = new NetworkedEntityState().assign({

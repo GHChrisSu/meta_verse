@@ -190,14 +190,9 @@ export class CreateUserMenu extends Component {
    * @param password
    * @param onError Callback to execute in the event of an error occurs with the log in attempt.
    */
-  public logUserIn(
-    email: string,
-    password: string,
-    onError: (error: string) => void
-  ) {
-    MMOManager.Instance.userLogIn(email, password, (response) => {
-      this.processUserAuth(onError, response);
-    });
+  public async logUserIn(email: string, password: string) {
+    const res = await MMOManager.Instance.userLogIn(email, password);
+    this.processUserAuth(res);
   }
 
   /** Checks if necessary inputs contain text and an attempt to sign up is not already in progress */
@@ -229,19 +224,10 @@ export class CreateUserMenu extends Component {
    * @param onError Callback function for when an error should occur that sends the error message.
    * @param response Response object from the server.
    */
-  private processUserAuth(
-    onError: (error: string) => void,
-    response: RequestResponse
-  ) {
+  private processUserAuth(response: RequestResponse) {
     console.log(`Create User Menu - Process user Auth`);
-
-    if (response.error) {
-      onError?.(response.output);
-    } else {
-      MMOManager.Instance.setCurrentUser(response);
-
-      // Consume the seat reservation by executing handler
-      this.consumeSeatReservationHandler(response);
-    }
+    MMOManager.Instance.setCurrentUser(response);
+    // Consume the seat reservation by executing handler
+    this.consumeSeatReservationHandler(response);
   }
 }
