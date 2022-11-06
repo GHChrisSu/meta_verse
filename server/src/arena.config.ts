@@ -10,6 +10,7 @@ import userRoutes from "./routes/userRoutes";
 import { ChatRoom } from "./rooms/ChatRoom";
 import { MMORoom } from "./rooms/MMORoom";
 import logger from "./helpers/logger";
+import { DDZRoom } from "./rooms/DDZRoom";
 
 export default Arena({
   getId: () => "Your Colyseus App",
@@ -19,6 +20,7 @@ export default Arena({
      * Define your room handlers:
      */
     gameServer.define("chat_room", ChatRoom).filterBy(["roomID"]);
+    gameServer.define("ddz_room", DDZRoom);
     gameServer.define("lobby_room", MMORoom).filterBy(["progress"]); // Filter room by "progress" (which grid we're wanting to join EX: -1x2)
   },
 

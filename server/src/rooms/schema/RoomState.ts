@@ -1,7 +1,7 @@
-
 import { Schema, type, MapSchema, ArraySchema } from "@colyseus/schema";
 import { AvatarState } from "./AvatarState";
 import { Vector3 } from "../../helpers/Vectors";
+import { ROOM_STATE } from "../../game/defines";
 
 export class NetworkedEntityState extends Schema {
   @type("string") id: string = "ID";
@@ -35,20 +35,20 @@ export class InteractableState extends Schema {
 }
 
 export class RoomState extends Schema {
-  @type({ map: NetworkedEntityState }) networkedUsers = new MapSchema<NetworkedEntityState>();
-  @type({ map: InteractableState }) interactableItems = new MapSchema<InteractableState>();
+  @type({ map: NetworkedEntityState }) networkedUsers =
+    new MapSchema<NetworkedEntityState>();
+  @type({ map: InteractableState }) interactableItems =
+    new MapSchema<InteractableState>();
   @type("number") serverTime: number = 0.0;
 
   getUserPosition(sessionId: string): any {
-
     if (this.networkedUsers.has(sessionId)) {
-
       const user: NetworkedEntityState = this.networkedUsers.get(sessionId);
 
       return {
         x: user.xPos,
         y: user.yPos,
-        z: user.zPos
+        z: user.zPos,
       };
     }
 
@@ -57,7 +57,6 @@ export class RoomState extends Schema {
 
   setUserPosition(sessionId: string, position: Vector3) {
     if (this.networkedUsers.has(sessionId)) {
-
       const user: NetworkedEntityState = this.networkedUsers.get(sessionId);
 
       user.xPos = position.x;
@@ -67,15 +66,13 @@ export class RoomState extends Schema {
   }
 
   getUserRotation(sessionId: string): any {
-
     if (this.networkedUsers.has(sessionId)) {
-
       const user: NetworkedEntityState = this.networkedUsers.get(sessionId);
 
       return {
         x: user.xRot,
         y: user.yRot,
-        z: user.zRot
+        z: user.zRot,
       };
     }
 
@@ -83,9 +80,7 @@ export class RoomState extends Schema {
   }
 
   getUserAvatarState(sessionId: string): AvatarState {
-
     if (this.networkedUsers.has(sessionId)) {
-
       const user: NetworkedEntityState = this.networkedUsers.get(sessionId);
       return user.avatar;
     }
@@ -109,4 +104,37 @@ export class ChatQueue extends Schema {
 
 export class ChatRoomState extends Schema {
   @type({ map: ChatQueue }) chatQueue = new MapSchema<ChatQueue>();
+}
+
+export class DDZUserEntityState extends Schema {
+  @type("string") id: string = "ID";
+  @type("string") username: string = "";
+  @type("boolean") ready: boolean = false;
+  @type("number") coins: number = 0.0;
+}
+
+export class Card extends Schema {
+  @type("number") index: number = 0;
+  @type("number") value: number = 0;
+  @type("number") shape: number = 0;
+  @type("number") king: number = 0;
+}
+
+export class DDZRoomState extends Schema {
+  @type({ map: DDZUserEntityState }) ddzUserEntityState =
+    new MapSchema<DDZUserEntityState>();
+  @type("number") roomState: ROOM_STATE = ROOM_STATE.ROOM_INVALID;
+  @type("string") ownPlayerId: string = "";
+  @type("number") bottom: number = 0;
+  @type("number") rate: number = 0;
+  @type("string") houseManagerId: string = "";
+  @type("number") state: number = 0;
+  @type({ array: "string" }) robPlayerIds: string[] = new ArraySchema<string>();
+  @type("string") roomMasterId: string = "";
+  @type({ array: Card }) threeCards: Card[] = new ArraySchema<Card>();
+  @type({ array: "string" }) playingIds: string[] = new ArraySchema<string>();
+  @type({ array: Card }) curPushCardList: Card[] = new ArraySchema<Card>();
+  @type({ array: Card }) lastPushCardList: Card[] = new ArraySchema<Card>();
+  @type("string") lastPushCardPlayerId: string = "";
+  @type("string") lastPlayerId: string = "";
 }

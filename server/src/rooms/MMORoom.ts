@@ -120,7 +120,7 @@ export class MMORoom extends Room<RoomState> {
     }
 
     // Sets the coin value of the networked user defaulting to 0 if none exists
-    newNetworkedUser.coins = auth.coins || 0;
+    newNetworkedUser.coins = auth.coins || 100;
 
     // Add the networked user to the collection;
     // This will trigger the OnAdd event of the state's "networkedUsers" collection on the client

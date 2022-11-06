@@ -1,8 +1,8 @@
-import { CREATE_ROOM_CONFIG, QIAN_STATE, ROOM_STATE } from './defines';
-import CardManager from './card_manager';
-import Player from './player';
-import Card, { CardClient } from './card';
-import config from '../config';
+import { CREATE_ROOM_CONFIG, QIAN_STATE, ROOM_STATE } from "./defines";
+import CardManager from "./card_manager";
+import Player from "./player";
+import Card, { CardClient } from "./card";
+import config from "../config";
 const console = config.console;
 
 const rooms: string[] = [];
@@ -21,8 +21,8 @@ interface GameResult {
   addressCounter: AddressCounter;
 }
 
-const getRandomStr = count => {
-  let str = '';
+const getRandomStr = (count: number) => {
+  let str = "";
   for (var i = 0; i < count; i++) {
     str += Math.floor(Math.random() * 10);
   }
@@ -55,7 +55,7 @@ export default class Room {
   constructor(data, player: Player) {
     this.roomId = getRandomStr(6);
     this.playerList = [];
-    console.log('creat room id:' + this.roomId);
+    console.log("creat room id:" + this.roomId);
 
     const tconfig = CREATE_ROOM_CONFIG[data.type];
 
@@ -70,7 +70,7 @@ export default class Room {
     this.playing = []; //存储出牌的用户(一轮)
     this.curPushCardList = []; //当前玩家出牌列表
     this.lastPushCardList = []; //玩家上一次出的牌
-    this.lastPushCardAccount = ''; //最后一个出牌的account
+    this.lastPushCardAccount = ""; //最后一个出牌的account
   }
 
   isFull() {
@@ -93,7 +93,7 @@ export default class Room {
         this.changeState(ROOM_STATE.ROOM_PUSHCARD);
         break;
       case ROOM_STATE.ROOM_PUSHCARD:
-        console.log('push card state');
+        console.log("push card state");
         //这个函数把54张牌分成4份[玩家1，玩家2，玩家3,底牌]
         this.threeCards = this.carder.splitThreeCards();
         for (var i = 0; i < this.playerList.length; i++) {
@@ -103,12 +103,12 @@ export default class Room {
         this.changeState(ROOM_STATE.ROOM_ROBSTATE);
         break;
       case ROOM_STATE.ROOM_ROBSTATE:
-        console.log('change ROOM_ROBSTATE state');
+        console.log("change ROOM_ROBSTATE state");
         this.robPlayer = [];
         for (var i = this.playerList.length - 1; i >= 0; i--) {
           this.robPlayer.push(this.playerList[i]);
         }
-        console.log('this.robplayer length:' + this.robPlayer.length);
+        console.log("this.robplayer length:" + this.robPlayer.length);
         this.turnRob();
         break;
       case ROOM_STATE.ROOM_SHOWBOTTOMCARD:
@@ -160,7 +160,9 @@ export default class Room {
         goldcount: player.gold,
         seatindex: player.seatindex,
       };
-      this.playerList = this.playerList.filter(playerInList => playerInList !== player);
+      this.playerList = this.playerList.filter(
+        (playerInList) => playerInList !== player
+      );
       //把用户信息广播个给房间其他用户
       for (var i = 0; i < this.playerList.length; i++) {
         this.playerList[i].sendPlayerOutRoom(playerInfo);
@@ -171,7 +173,7 @@ export default class Room {
   enter_room(player: Player, callback) {
     //获取房间内其他玩家数据
     var player_data = [];
-    console.log('enter_room _player_list.length:' + this.playerList.length);
+    console.log("enter_room _player_list.length:" + this.playerList.length);
     for (var i = 0; i < this.playerList.length; i++) {
       var data = {
         account: this.playerList[i].account,
@@ -181,7 +183,7 @@ export default class Room {
         isready: this.playerList[i].ready,
       };
       player_data.push(data);
-      console.log('enter_room userdata:' + JSON.stringify(data));
+      console.log("enter_room userdata:" + JSON.stringify(data));
     }
 
     //var seatid = getSeatIndex(this._player_list) //分配一个座位号
@@ -241,7 +243,7 @@ export default class Room {
   turnRob() {
     if (this.robPlayer.length == 0) {
       //都抢过了，需要确定最终地主人选,直接退出
-      console.log('rob player end');
+      console.log("rob player end");
       this.changeMaster();
       //改变房间状态，显示底牌
       this.changeState(ROOM_STATE.ROOM_SHOWBOTTOMCARD);
@@ -306,7 +308,9 @@ export default class Room {
 
   //一轮出牌完毕，调用这个函数重置出牌数组
   resetInitChuCardPlayer() {
-    const master_index = this.playerList.findIndex(player => player.account === this.roomMaster.account);
+    const master_index = this.playerList.findIndex(
+      (player) => player.account === this.roomMaster.account
+    );
 
     //重新计算出牌的顺序
     for (let i = 0; i < this.playerList.length - 1; i++) {
@@ -322,19 +326,22 @@ export default class Room {
     for (var i = 0; i < this.playerList.length; i++) {
       //通知下一个出牌的玩家
       if (!currentChuPaiPlayer.account) {
-        console.log('playing : ', this.playing);
-        console.log('playerList : ', this.playerList);
+        console.log("playing : ", this.playing);
+        console.log("playerList : ", this.playerList);
       }
       this.playerList[i].SendChuCard(currentChuPaiPlayer.account);
     }
-    console.log('player 出牌 length', this.playing.length);
+    console.log("player 出牌 length", this.playing.length);
     // 一旦要了牌 出牌顺序就重置
-    const nextPlayerIndex = this.playerList.findIndex(player => player.account === currentChuPaiPlayer.account) + 1;
+    const nextPlayerIndex =
+      this.playerList.findIndex(
+        (player) => player.account === currentChuPaiPlayer.account
+      ) + 1;
     for (let i = 0; i < this.playerList.length; i++) {
       const chuPaiIndex = (nextPlayerIndex + i) % this.playerList.length;
       this.playing[i] = this.playerList[chuPaiIndex];
     }
-    console.log('player 出牌完重置 length', this.playing.length);
+    console.log("player 出牌完重置 length", this.playing.length);
   }
 
   playerBuChuCard() {
@@ -343,17 +350,20 @@ export default class Room {
       //通知下一个出牌的玩家
       this.playerList[i].SendChuCard(cur_chu_card_player.account);
     }
-    console.log('player 不出牌 this.playing.length', this.playing.length);
+    console.log("player 不出牌 this.playing.length", this.playing.length);
     if (this.playing.length === 1) {
       this.lastPushCardList = [];
-      this.lastPushCardAccount = '';
+      this.lastPushCardAccount = "";
 
-      const nextPlayerIndex = this.playerList.findIndex(player => player.account === cur_chu_card_player.account) + 1;
+      const nextPlayerIndex =
+        this.playerList.findIndex(
+          (player) => player.account === cur_chu_card_player.account
+        ) + 1;
       for (let i = 0; i < this.playerList.length; i++) {
         const chuPaiIndex = (nextPlayerIndex + i) % this.playerList.length;
         this.playing[i] = this.playerList[chuPaiIndex];
       }
-      console.log('player 不出牌完重置 length', this.playing.length);
+      console.log("player 不出牌完重置 length", this.playing.length);
     }
   }
 
@@ -400,9 +410,15 @@ export default class Room {
     };
     for (var i = 0; i < this.playerList.length; i++) {
       if (this.playerList[i].account === this.roomMaster.account) {
-        addressCounter.dizhu = { account: this.roomMaster.account, nickName: this.roomMaster.nickName };
+        addressCounter.dizhu = {
+          account: this.roomMaster.account,
+          nickName: this.roomMaster.nickName,
+        };
       } else {
-        addressCounter.nongmin.push({ account: this.playerList[i].account, nickName: this.roomMaster.nickName });
+        addressCounter.nongmin.push({
+          account: this.playerList[i].account,
+          nickName: this.roomMaster.nickName,
+        });
       }
     }
     return addressCounter;
@@ -410,13 +426,13 @@ export default class Room {
 
   //玩家出牌
   playerChuCard(player: Player, data, cb) {
-    console.log('playerChuCard' + JSON.stringify(data));
+    console.log("playerChuCard" + JSON.stringify(data));
     //当前没有出牌,不用走下面判断
     if (data == 0) {
       const resp = {
         data: {
           account: player.account,
-          msg: 'choose card',
+          msg: "choose card",
         },
       };
       cb(-1, resp);
@@ -430,7 +446,7 @@ export default class Room {
       const resp = {
         data: {
           account: player.account,
-          msg: '不可用牌型',
+          msg: "不可用牌型",
         },
       };
       cb(-1, resp);
@@ -443,7 +459,7 @@ export default class Room {
         const resp = {
           data: {
             account: player.account,
-            msg: 'sucess',
+            msg: "sucess",
             cardvalue: cardvalue,
           },
         };
@@ -457,11 +473,11 @@ export default class Room {
       }
       //和上次玩家出牌进行比较
       if (false == this.carder.compareWithCard(this.lastPushCardList, data)) {
-        console.log('last_push_card_list', this.lastPushCardList);
+        console.log("last_push_card_list", this.lastPushCardList);
         const resp = {
           data: {
             account: player.account,
-            msg: '当前牌太小',
+            msg: "当前牌太小",
             cardvalue: cardvalue,
           },
         };
@@ -473,7 +489,7 @@ export default class Room {
         const resp = {
           data: {
             account: player.account,
-            msg: 'choose card sucess',
+            msg: "choose card sucess",
             cardvalue: cardvalue,
           },
         };
@@ -488,16 +504,16 @@ export default class Room {
   }
   //客户端到服务器: 处理玩家抢地主消息
   playerRobmaster(player, data) {
-    console.log('playerRobmaster value:' + data);
+    console.log("playerRobmaster value:" + data);
     if (QIAN_STATE.buqiang == data) {
       //记录当前抢到地主的玩家id
     } else if (QIAN_STATE.qian == data) {
       this.roomMaster = player;
     } else {
-      console.log('playerRobmaster state error:' + data);
+      console.log("playerRobmaster state error:" + data);
     }
     if (player == null) {
-      console.log('trun rob master end');
+      console.log("trun rob master end");
       return;
     }
     //广播这个用户抢地主状态(抢了或者不抢)
