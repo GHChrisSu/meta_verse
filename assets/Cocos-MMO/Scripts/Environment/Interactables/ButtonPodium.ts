@@ -1,16 +1,10 @@
 import {
-  _decorator,
-  Component,
-  Node,
+  director,
   Material,
   MeshRenderer,
-  Mesh,
   ParticleSystem,
-  director,
+  _decorator,
 } from "cc";
-import { DDZRoomState } from "../../../../../Server/src/rooms/schema/RoomState";
-import { DDZManager } from "../../Managers/DDZManager";
-import { MMOManager } from "../../Managers/MMOManager";
 import { NetworkedEntity } from "../../Player/NetworkedEntity";
 import { Interactable } from "../Interactable";
 const { ccclass, property } = _decorator;
@@ -31,14 +25,7 @@ export class ButtonPodium extends Interactable {
     if (entity.IsMine) super.playerInRange(entity);
 
     director.loadScene("DDZScene", async () => {
-      const client = MMOManager.Instance.client;
-      const id = MMOManager.Instance.CurrentUser.id;
-      let ddzRoom: Colyseus.Room<DDZRoomState> =
-        await client.joinOrCreate<DDZRoomState>("ddz_room", {
-          id: "asdiuhkwehaf",
-        });
-
-      DDZManager.Instance.setRoom(ddzRoom);
+      // const client = MMOManager.Instance.client;
     });
   }
 

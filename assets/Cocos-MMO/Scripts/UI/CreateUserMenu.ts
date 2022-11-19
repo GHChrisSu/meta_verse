@@ -113,7 +113,7 @@ export class CreateUserMenu extends Component {
     this._attemptingSignUp = false;
     this.signUpSpinner.active = false;
 
-    this.processUserAuth((error) => this.updateErrorText(error), res);
+    this.processUserAuth(res);
   }
 
   public updateErrorText(msg: string) {
@@ -125,7 +125,7 @@ export class CreateUserMenu extends Component {
    * Initiates user log in with the server.
    * @param buttonObject The game object the button component is on.
    */
-  public onButtonEvent_SubmitLogIn() {
+  public async onButtonEvent_SubmitLogIn() {
     MMOPlayerPrefs.rememberMe = this.rememberMe.isChecked;
 
     MMOPlayerPrefs.email = this.rememberMe.isChecked
@@ -140,16 +140,17 @@ export class CreateUserMenu extends Component {
     this._attemptingLogin = true;
     this.logInSpinner.active = true;
 
-    this.logUserIn(
-      this.logInEmailInput.string,
-      this.logInPasswordInput.string,
-      (error) => {
-        this._attemptingLogin = false;
-        this.logInSpinner.active = false;
+    try {
+      await this.logUserIn(
+        this.logInEmailInput.string,
+        this.logInPasswordInput.string
+      );
+    } catch (error: any) {
+      this._attemptingLogin = false;
+      this.logInSpinner.active = false;
 
-        this.updateErrorText(error);
-      }
-    );
+      this.updateErrorText(error.message);
+    }
   }
 
   private resetViews() {

@@ -4,7 +4,8 @@
   },
   "dependencies": {
     "@trpc/client": "^10.0.0-proxy-beta.25",
-    "@trpc/server": "^10.0.0-proxy-beta.25"
+    "@trpc/server": "^10.0.0-proxy-beta.25",
+    "copy-to-clipboard": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^15.12.5"

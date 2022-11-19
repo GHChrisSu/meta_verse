@@ -1,28 +1,16 @@
-import {
-  Component,
-  director,
-  game,
-  instantiate,
-  Node,
-  Prefab,
-  Vec2,
-  _decorator,
-} from "cc";
+import { Component, director, Vec2, _decorator } from "cc";
 const { ccclass, property } = _decorator;
 
-import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
 import Colyseus from "db://colyseus-sdk/colyseus.js";
 import type {
   ChatRoomState,
-  DDZRoomState,
   NetworkedEntityState,
   RoomState,
 } from "../../../../Server/src/rooms/schema/RoomState";
-import { ColyseusSettings } from "../ColyseusSettings";
 import { Interactable } from "../Environment/Interactable";
+import Connector from "../Helpers/Connector";
 import { Delay } from "../Helpers/Delay";
 import { EventDispatcher } from "../Helpers/EventDispatcher";
-import { MMOPlayerPrefs } from "../MMOPlayerPrefs";
 import { MovedToGridMessage, ObjectUseMessage } from "../Models/Messages";
 import { RequestResponse } from "../Models/RequestResponse";
 import { UserData } from "../Models/UserData";
@@ -30,7 +18,6 @@ import { NetworkedEntity } from "../Player/NetworkedEntity";
 import { ChatManager } from "./ChatManager";
 import { EnvironmentController } from "./EnvironmentController";
 import { NetworkedEntityFactory } from "./NetworkedEntityFactory";
-import { AppRouter } from "../../../../server/src/routes/userRoutes";
 
 /*
  * NOTE:
@@ -48,20 +35,10 @@ export class MMOManager extends Component {
     return this._instance;
   }
 
-  // @ts-ignore
-  public trpc = createTRPCProxyClient<AppRouter>({
-    links: [
-      httpBatchLink({
-        url: this.WebRequestEndPoint + "/trpc",
-      }),
-    ],
-  });
-
   private constructor() {
     super();
 
     if (MMOManager._instance != null) {
-      this.autoConnect = false;
       this._shouldSelfDestruct = true;
       return;
     }
@@ -78,42 +55,6 @@ export class MMOManager extends Component {
 
   public get IsReady(): boolean {
     return !MMOManager.Instance === false;
-  }
-
-  public get ColyseusServerAddress(): string {
-    return this._serverSettings?.colyseusServerAddress || "localhost";
-  }
-
-  public set ColyseusServerAddress(value: string) {
-    this._serverSettings.colyseusServerAddress = value;
-  }
-
-  public get ColyseusServerPort(): number {
-    return this._serverSettings?.colyseusServerPort || 2567;
-  }
-
-  public set ColyseusServerPort(value: number) {
-    this._serverSettings.colyseusServerPort = value;
-  }
-
-  public get ColyseusUseSecure(): boolean {
-    return this._serverSettings?.useSecureProtocol || false;
-  }
-
-  public set ColyseusUseSecure(value: boolean) {
-    this._serverSettings.useSecureProtocol = value;
-  }
-
-  private get WebSocketEndPoint(): string {
-    return `${this.ColyseusUseSecure ? "wss" : "ws"}://${
-      this.ColyseusServerAddress
-    }:${this.ColyseusServerPort}`;
-  }
-
-  private get WebRequestEndPoint(): string {
-    return `${this.ColyseusUseSecure ? "https" : "http"}://${
-      this.ColyseusServerAddress
-    }:${this.ColyseusServerPort}`;
   }
 
   public get CurrentUser() {
@@ -141,29 +82,7 @@ export class MMOManager extends Component {
     return 0;
   }
 
-  public get client(): Colyseus.Client | null {
-    return this._client;
-  }
-  public set client(value: Colyseus.Client | null) {
-    this._client = value;
-  }
-
-  // @property
-  // private serverURL: string = 'localhost';
-  // @property
-  // private serverPort: string = '2567';
-  // @property
-  // private useSecure: boolean = false;
-
-  @property({ type: Prefab })
-  private colyseusSettingsObject: Prefab;
-
-  @property
-  private autoConnect: boolean = false;
-
-  private _serverSettings: ColyseusSettings = null;
   private _shouldSelfDestruct: boolean = false;
-  private _client: Colyseus.Client | null = null;
   private _currentUser: UserData = null;
   private _room: Colyseus.Room<RoomState> = null;
   private _currentRoomState: RoomState = null;
@@ -176,14 +95,7 @@ export class MMOManager extends Component {
       return;
     }
 
-    game.addPersistRootNode(this.node);
-
-    this.initializeServerSettings();
-
-    if (this.autoConnect) {
-      this.initializeClient();
-      this.quickSignIn();
-    }
+    this.initializeClient();
   }
 
   onDestroy() {
@@ -196,29 +108,6 @@ export class MMOManager extends Component {
     }
 
     console.log(`MMO Manager - Initialize Client`);
-
-    this._client = new Colyseus.Client(this.WebSocketEndPoint);
-  }
-
-  private initializeServerSettings() {
-    if (!this.colyseusSettingsObject) {
-      console.error(`MMO Manager - Missing Prefab for Colyseus Settings!`);
-      return;
-    }
-
-    // Create an instance of the server settings object and get a reference to the script.
-    const settingsNode: Node = instantiate(this.colyseusSettingsObject);
-
-    if (!settingsNode) {
-      console.error(`Failed to create settings node!`);
-      return;
-    }
-
-    this._serverSettings = settingsNode.getComponent(ColyseusSettings);
-
-    console.log(
-      `Server settings loaded - Address: ${this.ColyseusServerAddress}  Port: ${this.ColyseusServerPort}  Use Secure: ${this.ColyseusUseSecure}`
-    );
   }
 
   private registerHandlers() {
@@ -321,23 +210,6 @@ export class MMOManager extends Component {
     }
   }
 
-  private async quickSignIn() {
-    const email: string | null = MMOPlayerPrefs.email;
-    const password: string | null = MMOPlayerPrefs.password;
-
-    if (!email || !password) {
-      console.error(`Quick Sign In Failed - Missing email and/or password!`);
-      return;
-    }
-
-    const res = await this.userLogIn(email, password);
-
-    if (!res.error) {
-      this.setCurrentUser(res);
-      this.loadGridAndConsumeSeatReservation(res);
-    }
-  }
-
   /**
    * Sends the provided user info to the server to attempt the creation of a new account.
    * @param username Username of the new account
@@ -346,7 +218,7 @@ export class MMOManager extends Component {
    * @param onComplete Callback to execute when the request has completed
    */
   public async userSignUp(username: string, email: string, password: string) {
-    const res = await this.trpc.signUp.mutate({
+    const res = await Connector.trpc.signUp.mutate({
       username,
       email,
       password,
@@ -362,7 +234,7 @@ export class MMOManager extends Component {
    * @param onComplete Callback to execute when the request has completed
    */
   public async userLogIn(email: string, password: string) {
-    const res = await this.trpc.logIn.mutate({
+    const res = await Connector.trpc.logIn.mutate({
       email,
       password,
     });
@@ -404,7 +276,7 @@ export class MMOManager extends Component {
     sessionId: string
   ) {
     try {
-      this.Room = await this._client.consumeSeatReservation<RoomState>({
+      this.Room = await Connector.client.consumeSeatReservation<RoomState>({
         room,
         sessionId,
       });
@@ -441,7 +313,7 @@ export class MMOManager extends Component {
 
   private async joinChatRoom() {
     let chatRoom: Colyseus.Room<ChatRoomState> =
-      await this._client.joinOrCreate<ChatRoomState>("chat_room", {
+      await Connector.client.joinOrCreate<ChatRoomState>("chat_room", {
         roomID: this.Room.id,
         messageLifetime: ChatManager.Instance.messageShowTime,
       });
